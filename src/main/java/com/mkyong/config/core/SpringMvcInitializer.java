@@ -5,7 +5,6 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 import com.mkyong.config.AppConfig;
 
 public class SpringMvcInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class[] { AppConfig.class };

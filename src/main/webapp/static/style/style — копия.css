@@ -1,0 +1,52 @@
+body  {
+    background: url(../img/bg2.png);
+}
+#header {
+      background: #f1ece8;
+      height:95px;
+}
+
+#content {
+    background: #fff;
+ 
+}
+.sidebar {
+    
+    margin: :0;
+    height:300px;
+    
+}
+ #smenu {
+display: block; 
+     position: static;
+     width: 225px;
+     
+    
+}
+
+#men{
+position: absolute;
+    margin: -85px 0px 0px 180px ;
+display: block;
+    min-width: 760px;
+
+}
+.btn {
+    
+    margin: 48px;
+
+}
+.text
+{
+    background: #fff;
+     height:300px;
+}
+
+
+
+
+#footer {
+    background: #8869fd;
+    height: 150px;
+     min-width: 760px;
+}

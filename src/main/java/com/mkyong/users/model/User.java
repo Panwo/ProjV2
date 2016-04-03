@@ -1,23 +1,29 @@
 package com.mkyong.users.model;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-
 @Entity
-@Table(name = "users", catalog = "test")
+@Table(name = "users", catalog = "shopv2")
 public class User {
 
+	@Id
+	@Column(name = "username", unique = true, nullable = false, length = 45)
 	private String username;
+	@Column(name = "password", nullable = false, length = 60)
 	private String password;
+	@Column(name = "enabled", nullable = false)
 	private boolean enabled;
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
 	private Set<UserRole> userRole = new HashSet<UserRole>(0);
+	@Column(name  = "email")
+	private String email;
+	@Column(name = "phone")
+	private String phone;
+	@Column(name = "male")
+	private Integer male;
+
 
 	public User() {
 	}
@@ -34,9 +40,6 @@ public class User {
 		this.enabled = enabled;
 		this.userRole = userRole;
 	}
-
-	@Id
-	@Column(name = "username", unique = true, nullable = false, length = 45)
 	public String getUsername() {
 		return this.username;
 	}
@@ -45,7 +48,7 @@ public class User {
 		this.username = username;
 	}
 
-	@Column(name = "password", nullable = false, length = 60)
+
 	public String getPassword() {
 		return this.password;
 	}
@@ -54,7 +57,7 @@ public class User {
 		this.password = password;
 	}
 
-	@Column(name = "enabled", nullable = false)
+
 	public boolean isEnabled() {
 		return this.enabled;
 	}
@@ -63,7 +66,7 @@ public class User {
 		this.enabled = enabled;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+
 	public Set<UserRole> getUserRole() {
 		return this.userRole;
 	}

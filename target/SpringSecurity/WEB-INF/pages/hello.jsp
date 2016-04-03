@@ -8,6 +8,7 @@
 	<h1>Message : ${message}</h1>
 
 	<sec:authorize access="hasRole('ROLE_USER')">
+
 		<!-- For login user -->
 		<c:url value="/logout" var="logoutUrl" />
 

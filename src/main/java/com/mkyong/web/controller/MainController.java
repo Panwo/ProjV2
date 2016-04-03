@@ -1,7 +1,5 @@
 package com.mkyong.web.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.LockedException;
@@ -13,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class MainController {
@@ -90,7 +90,6 @@ public class MainController {
 			model.addObject("username", userDetail.getUsername());
 
 		}
-
 		model.setViewName("403");
 		return model;
 
