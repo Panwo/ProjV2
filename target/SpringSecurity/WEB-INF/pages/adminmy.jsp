@@ -99,7 +99,12 @@
    </div>
         <div class="span8 text">
 
-            <h5>  ADMIN PAGE!!!!   </h5>
+            <h5>  ADMIN PAGE!!!!   </h5><c:if test="${pageContext.request.userPrincipal.name != null}">
+            <h2>
+                Welcome : ${pageContext.request.userPrincipal.name} | <a
+                    href="javascript:formSubmit()"> Logout</a>
+            </h2>
+        </c:if>
             </div>
       <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
 	</div>

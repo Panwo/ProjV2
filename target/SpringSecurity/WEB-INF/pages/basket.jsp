@@ -14,7 +14,7 @@
     <script src="/res/http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
     <script src="/webapp/static/style/js/login.js"></script>
 
-    <title>Подарки</title>
+    <title>basket</title>
 
     <!-------- 2 способ - ------------------------------------>
     <link href="<c:url value="/WEB-INF/pages/style/style.css" />" rel="stylesheet">
@@ -64,6 +64,8 @@
                     </form>
                 </div>
             </div>
+
+
             <!-- Login Ends Here -->
         </div>
     </div>

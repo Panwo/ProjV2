@@ -26,15 +26,27 @@ import java.util.Properties;
 @Import({ SecurityConfig.class })
 public class AppConfig {
 
+	@Bean(name = "dataSource")
+	public BasicDataSource dataSource() {
+
+		BasicDataSource ds = new BasicDataSource();
+		ds.setDriverClassName("com.mysql.jdbc.Driver");
+		ds.setUrl("jdbc:mysql://localhost:3306/shopv2");
+		ds.setUsername("root");
+		ds.setPassword("root");
+		return ds;
+	}
+
+
 	@Bean
     public SessionFactory sessionFactory() {
         LocalSessionFactoryBuilder builder = new LocalSessionFactoryBuilder(dataSource());
         builder
         	.scanPackages("com.mkyong.users.model")
             .addProperties(getHibernateProperties());
-
-        return builder.buildSessionFactory();
+		     return builder.buildSessionFactory();
     }
+
 
 	private Properties getHibernateProperties() {
         Properties prop = new Properties();
@@ -43,9 +55,6 @@ public class AppConfig {
         prop.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         return prop;
     }
-
-
-
 
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory
@@ -58,6 +67,9 @@ public class AppConfig {
 		return entityManagerFactory;
 	}
 
+
+
+
 	@Bean
 	public JpaVendorAdapter jpaVendorAdapter()
 	{
@@ -68,24 +80,12 @@ public class AppConfig {
 		return adapter;
 	}
 
-	@Bean(name = "dataSource")
-	public BasicDataSource dataSource() {
-		
-		BasicDataSource ds = new BasicDataSource();
-	    ds.setDriverClassName("com.mysql.jdbc.Driver");
-		ds.setUrl("jdbc:mysql://localhost:3306/shopv2");
-		ds.setUsername("root");
-		ds.setPassword("root");
-		return ds;
-	}
-	
+
 	@Bean
-    public HibernateTransactionManager txManager() {
-        return new HibernateTransactionManager(sessionFactory());
-    }
+	public HibernateTransactionManager txManager() {
+		return new HibernateTransactionManager(sessionFactory());
+	}
 
-
-		
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -94,7 +94,4 @@ public class AppConfig {
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}
-
-
-	
 }

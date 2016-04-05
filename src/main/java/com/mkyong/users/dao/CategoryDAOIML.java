@@ -1,6 +1,7 @@
 package com.mkyong.users.dao;
 
 import com.mkyong.users.model.Category;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

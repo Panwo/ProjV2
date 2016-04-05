@@ -1,5 +1,6 @@
 package com.mkyong.config;
 
+import com.mkyong.users.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -28,8 +29,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests().antMatchers("/admin/**")
-			.access("hasRole('ROLE_ADMIN')").and().formLogin()
+		http.authorizeRequests().antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
+				 .antMatchers("/user/**").access("hasRole('ROLE_USER')")
+		         .antMatchers("/basket/**").access("hasRole('ROLE_USER')").
+
+				 and().formLogin()
 			.loginPage("/login").failureUrl("/login?error")
 				.usernameParameter("username")
 				.passwordParameter("password")

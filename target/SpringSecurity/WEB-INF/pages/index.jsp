@@ -6,20 +6,15 @@
        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta charset ="urf-8">
      <!----------------классический-------------------------------->
+
     <title>Подарки</title>
 
     <!-------- 2 способ - ------------------------------------>
-    <link href="<c:url value=''/static/style/style.css' />" rel="stylesheet">
-
-
+    <link href="<c:url value='/static/style/style.css' />" rel="stylesheet">
 
 </head>
-
 <body>
-    
-
 <div class="container">
-
     <div class="row" id = "header">
        <div class = "span12">
            <div class = "logo1">

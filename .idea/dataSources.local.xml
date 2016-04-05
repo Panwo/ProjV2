@@ -7,11 +7,5 @@
       <schema-pattern>shopv2.*</schema-pattern>
       <default-schemas>shopv2.*</default-schemas>
     </data-source>
-    <data-source name="MySQL - test@localhost" uuid="ac36a7ce-04fd-4299-b35e-6ef8172e36c0">
-      <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
-      <schema-pattern>test.*</schema-pattern>
-      <default-schemas>test.*</default-schemas>
-    </data-source>
   </component>
 </project>
