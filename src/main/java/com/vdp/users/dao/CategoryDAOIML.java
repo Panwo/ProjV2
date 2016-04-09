@@ -27,4 +27,8 @@ public class CategoryDAOIML  implements CategoryDAO {
         Query query = entityManager.createQuery("select  c FROM Category c", Category.class);
         return (List<Category>) query.getResultList();
     }
+
+    public void add(Category category){
+        entityManager.persist(category);
+    }
 }

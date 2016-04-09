@@ -4,11 +4,15 @@
 <!doctype html>
 <html>
 <head>
-    <link rel ="stylesheet" href = "style/bootstrap.min.css">
-    <link rel ="stylesheet" href = "style/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel ="stylesheet" href = "../../bootstrap.min.css">
+    <link rel ="stylesheet" href = "../../style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="js/jquery-1.11.1.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </script>
+
+
     <meta charset ="urf-8">
     <title>Подарки</title>
 </head>
@@ -25,8 +29,9 @@
             </div>
 
             <div id="men"> <a class="btn btn-primary"  href="index.html">Главная</a>
-                <a class="btn btn-primary" href="/pruductpp">Добавить товары</a>
-                <a class="btn btn-primary" href="/%D0%BE%D0%BF%D1%82%D0%BE%D0%B2%D0%B8%D0%BA%D0%B0%D0%BC.html">Удалить выбранные</a>
+                <a class="btn btn-primary"  href="/pruductpp">Добавить товары</a>
+                <a class="btn btn-primary" id="delete_product"  >Удалить выбранные</a>
+                 <a class = "btn-primary" href = "/grouppp"> Добавить группу  </a>
                 <a class = "btn btn-" href="javascript:formSubmit()"> Logout</a>
 
             </div>
@@ -69,6 +74,7 @@
 
                 <!----------------------------insert here ---------------------------------------->
                 <c:forEach items="${products}" var = "products">
+                    <input type="checkbox" name="toDelete[]" value="${products.id}" id="checkbox_${products.id}"/>
                     <div class="products-main">
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
@@ -140,6 +146,24 @@
 
 </div>
 
+
+
+
+
+<script>
+
+    $('#delete_product').click(function(){
+        var data = { 'toDelete[]' : []};
+        $(":checked").each(function() {
+            data['toDelete[]'].push($(this).val());
+        });
+        $.post("/delproduct", data);
+        location.reload();
+    })
+
+
+
+</script>
 </body>
 
 </html>

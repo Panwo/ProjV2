@@ -5,7 +5,7 @@ import javax.persistence.*;
 import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
-@Table(name = "user_roles", catalog = "shopv2", uniqueConstraints = @UniqueConstraint(columnNames = { "role", "username" }))
+@Table(name = "user_roles",  uniqueConstraints = @UniqueConstraint(columnNames = { "role", "username" }))
 public class UserRole{
 
 	private Integer userRoleId;

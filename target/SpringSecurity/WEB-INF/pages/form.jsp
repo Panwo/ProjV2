@@ -3,7 +3,7 @@
 <HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 
-<link rel ="stylesheet" href = "style/formstyles.css">
+<link rel ="stylesheet" href = "../../formstyles.css">
 <script>
 
     d= document;

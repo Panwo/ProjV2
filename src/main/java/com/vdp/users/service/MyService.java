@@ -36,7 +36,7 @@ public class MyService {
         productsDAO.deleteMany(toDelete);
     }
 
-    @Transactional
+     @Transactional(readOnly = false)
     public void addProduct(Products product){
         productsDAO.addProduct(product);
     }
@@ -46,6 +46,10 @@ public class MyService {
       return   productsDAO.listall();
     }
 
+    @Transactional
+    public void  addCategory(Category category){
+        categoryDAO.add(category);
+    }
 
 
      // end of admin part---------------------------------------

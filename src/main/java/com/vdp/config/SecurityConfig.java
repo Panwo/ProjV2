@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	public void configure(WebSecurity web) throws Exception {
 		web.ignoring()
-				.antMatchers("/style/**");
+				.antMatchers("**/style/**");
 	}
 
 	@Override
@@ -42,14 +42,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		         .antMatchers("/basket/**").access("hasRole('ROLE_USER')")
 		          .antMatchers("/resources/**", "/**").permitAll()
 				 .and().formLogin()
-			.loginPage("/login").failureUrl("/login?error")
+			.loginPage("/login").defaultSuccessUrl("/index").failureUrl("/login?error")
 				.usernameParameter("username")
 				.passwordParameter("password")
 				.and().logout().logoutSuccessUrl("/login?logout")
-				.and().csrf()
 				.and().exceptionHandling().accessDeniedPage("/403");
 
-		http.csrf().disable();
+		         http.csrf().disable();
 	}
 	
 	@Bean

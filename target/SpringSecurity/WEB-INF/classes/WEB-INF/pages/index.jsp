@@ -8,9 +8,9 @@
      <!----------------классический-------------------------------->
 
     <title>Подарки</title>
-
-    <link rel="stylesheet" type="text/css" href="/resources/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
 </head>
 <body>
 <div class="container">
@@ -68,8 +68,7 @@
         <div class="span3 sidebar">
           
           <div class="side1">
-
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
           <li><a tabindex="-1" href="/top/1">Для девушек</a></li>
             <li><a tabindex="-1" href="/top/2">Для мужчин</a></li>
              <li><a tabindex="-1" href="/top/3">Для детей </a></li>

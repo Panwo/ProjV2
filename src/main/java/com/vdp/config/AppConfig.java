@@ -1,24 +1,23 @@
 package com.vdp.config;
 
 import org.apache.commons.dbcp.BasicDataSource;
-import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.orm.hibernate4.HibernateTransactionManager;
-import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
-import java.util.Properties;
 
 @EnableWebMvc
 @Configuration
@@ -40,7 +39,7 @@ public class AppConfig {
 	}
 
 
-	@Bean
+	/*@Bean
     public SessionFactory sessionFactory() {
         LocalSessionFactoryBuilder builder = new LocalSessionFactoryBuilder(dataSource());
         builder
@@ -48,15 +47,15 @@ public class AppConfig {
             .addProperties(getHibernateProperties());
 		     return builder.buildSessionFactory();
     }
+*/
 
-
-	private Properties getHibernateProperties() {
+	/*private Properties getHibernateProperties() {
         Properties prop = new Properties();
         prop.put("hibernate.format_sql", "true");
         prop.put("hibernate.show_sql", "true");
-        prop.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        prop.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         return prop;
-    }
+    }*/
 
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory
@@ -74,22 +73,23 @@ public class AppConfig {
 	{
 		HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
 		adapter.setShowSql(true);
-		adapter.setGenerateDdl(true);
-		adapter.setDatabasePlatform("org.hibernate.dialect.MySQL5Dialect");
+		adapter.setGenerateDdl(false);
+		adapter.setDatabasePlatform("org.hibernate.dialect.MySQLDialect");
 		return adapter;
 	}
 
+	/*@Bean
+	public HibernateTransactionManager transactionManager(final SessionFactory sessionFactory) {
+		final HibernateTransactionManager transactionManager = new HibernateTransactionManager();
+		transactionManager.setSessionFactory(sessionFactory);
 
-
-
-	@Bean
-	public CommonsMultipartResolver multipartResolver() {
-		return new CommonsMultipartResolver();
+		return transactionManager;
 	}
+*/
 
 	@Bean
-	public HibernateTransactionManager txManager() {
-		return new HibernateTransactionManager(sessionFactory());
+	public PlatformTransactionManager transactionManager(EntityManagerFactory emf){
+		return new JpaTransactionManager(emf);
 	}
 
 	@Bean
@@ -100,4 +100,11 @@ public class AppConfig {
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}
+
+	@Bean
+	public CommonsMultipartResolver multipartResolver() {
+		return new CommonsMultipartResolver();
+	}
+
+
 }

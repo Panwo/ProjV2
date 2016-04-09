@@ -23,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 @Controller
 public class MainController   {
@@ -49,7 +50,7 @@ public class MainController   {
 	}
 
 	@RequestMapping(value = "/pruductpp")
-		public ModelAndView productPP(){
+	public ModelAndView productPP(){
 		ModelAndView modelAndView = new ModelAndView();
 
 		modelAndView.addObject("categories", myService.listGroups());
@@ -57,16 +58,61 @@ public class MainController   {
 		return modelAndView;
 	}
 
+	@RequestMapping(value = "/grouppp")
+		public ModelAndView groupPp(){
+			ModelAndView modelAndView = new ModelAndView();
 
-    @RequestMapping(value = "/addproduct", method = RequestMethod.POST)
+			modelAndView.addObject("categories", myService.listGroups());
+			modelAndView.setViewName("addgroup");
+			return modelAndView;
+	}
+
+
+	@RequestMapping(value = "/delproduct")
+	public ModelAndView delproduct(@RequestParam(value = "toDelete[]", required = false) long [] toDelete)
+	{
+		ModelAndView modelAndView = new ModelAndView();
+           if (toDelete != null) {
+			   myService.deleteManyProducts(toDelete);
+			   modelAndView.addObject("products", myService.displayProducts());
+			   modelAndView.setViewName("adminmy");
+
+		   }else modelAndView.setViewName("index");
+
+
+
+
+          return modelAndView;
+	}
+
+
+	@RequestMapping(value = "/addproduct", method = RequestMethod.POST)
 	public ModelAndView addproduct(@RequestParam (value = "category") long categoryID,
-							 		 @RequestParam String description,
-								     @RequestParam String price,
-									 @RequestParam(value="photo") MultipartFile photo,
-							 ModelAndView model) throws IOException {
-		Products product = new Products(description, price, photo.getBytes());
-        myService.addProduct(product);
+								   @RequestParam String description,
+								   @RequestParam String price,
+								   @RequestParam(value="photo") MultipartFile photo
+								   ) throws IOException {
+
+		ModelAndView model = new ModelAndView();
+		Category category = myService.find(categoryID);
+		List<Category> categoryList = new ArrayList<Category>();
+		categoryList.add(category);
+
+		Products product = new Products(description, price, photo.getBytes(), categoryList);
+		myService.addProduct(product);
+
 		model.addObject("products",myService.displayProducts());
+		model.setViewName("adminmy");
+		return model;
+	}
+
+	@RequestMapping(value = "/addgroup" , method = RequestMethod.POST)
+	public ModelAndView addgroup (@RequestParam (value = "category_name" ) String category_name
+	){
+		ModelAndView model = new ModelAndView();
+		Category category = new Category(category_name);
+		myService.addCategory(category);
+		model.addObject("products", myService.displayProducts());
 		model.setViewName("adminmy");
 		return model;
 	}
@@ -78,7 +124,7 @@ public class MainController   {
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	@ResponseStatus(value= HttpStatus.OK)
 	public ModelAndView login(@RequestParam(value = "error", required = false) String error,
-			@RequestParam(value = "logout", required = false) String logout, HttpServletRequest request) {
+							  @RequestParam(value = "logout", required = false) String logout, HttpServletRequest request) {
 
 		ModelAndView model = new ModelAndView();
 		if (error != null) {
@@ -92,32 +138,28 @@ public class MainController   {
 	}
 
 
-    //viewForDifferentUsers------------------------------------------------------------
+	//viewForDifferentUsers------------------------------------------------------------
 	@RequestMapping("/top/{id}")
 	public ModelAndView listCategory (@PathVariable(value = "id") long categoryId) {
 		ModelAndView model = new ModelAndView();
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
 		if (!(auth instanceof AnonymousAuthenticationToken)) {
+
 			UserDetails userDetail = (UserDetails) auth.getPrincipal();
 			ArrayList<UserRole> roles = new ArrayList<UserRole>();
-			 User user = myService.findUserByUsername(userDetail.getUsername());
+			User user = myService.findUserByUsername(userDetail.getUsername());
+
 			for (Iterator<UserRole> iterator = user.getUserRole().iterator(); iterator.hasNext();){
-					roles.add(iterator.next());
-				}
+				roles.add(iterator.next());
+			}
+
 			if (roles.get(0).getRole().equals("ROLE_USER")) {
-				model.setViewName("userview");
-				//userDatabase
 				Category category = myService.find(categoryId);
 				model.addObject("cat",category);
 				model.addObject("products", myService.listProducts(category));
 				model.addObject("categories", myService.listGroups());
-
-			} else if
-					(roles.get(0).getRole().equals("ROLE_ADMIN")){
-				           model.setViewName("adminmy");
-				//admindatabase
-
-
+				model.setViewName("userview");
 			}
 		} else
 
@@ -131,7 +173,7 @@ public class MainController   {
 		}
 		return model;
 	}
-     //----------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------
 
 	// return user view --------------------------------------------------
 	@RequestMapping("/user")
@@ -153,7 +195,7 @@ public class MainController   {
 		}
 		return error;
 	}
-    //----------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------------
 
 	// for 403 access denied page ---------------------------------------------------------
 	@RequestMapping(value = "/403", method = RequestMethod.GET)
@@ -169,7 +211,7 @@ public class MainController   {
 		}
 		model.setViewName("403");
 		return model;
-
 	}
-  // ----------------------------------------------------------------------------------------
+
+	// ----------------------------------------------------------------------------------------
 }

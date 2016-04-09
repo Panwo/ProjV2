@@ -7,4 +7,6 @@ import java.util.List;
 public interface CategoryDAO {
     Category showOne(long id);
     List<Category> list();
+    void  add(Category category);
+
 }

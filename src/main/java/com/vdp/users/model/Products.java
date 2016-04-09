@@ -33,6 +33,14 @@ public class Products implements Serializable {
         this.image = image;
     }
 
+    public Products(String description, String price, byte[] image, List<Category> categories) {
+        this.description = description;
+        this.price = price;
+        this.image = image;
+        this.categories = categories;
+    }
+
+
 
     @ManyToMany
     @JoinTable(
@@ -41,6 +49,7 @@ public class Products implements Serializable {
             inverseJoinColumns = {@JoinColumn(name = "category_id", referencedColumnName = "id")}
     )
         List<Category> categories = new ArrayList<Category>();
+
 
     @ManyToMany
     @JoinTable(
