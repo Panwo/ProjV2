@@ -7,6 +7,7 @@ import com.vdp.users.dao.UserDao;
 import com.vdp.users.model.Category;
 import com.vdp.users.model.Products;
 import com.vdp.users.model.User;
+import com.vdp.users.model.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -53,6 +54,12 @@ public class MyService {
 
 
      // end of admin part---------------------------------------
+
+
+    @Transactional
+    public void RegisterUser(User user, UserRole role){
+        userDao.registerNew(user, role);
+    }
 
     @Transactional(readOnly = true)
     public com.vdp.users.model.User findUserByUsername(String username){

@@ -13,6 +13,7 @@ import org.springframework.security.authentication.LockedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -21,9 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 @Controller
 public class MainController   {
@@ -32,12 +31,49 @@ public class MainController   {
 	MyService myService;
 
 
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+
 	@RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
 	public ModelAndView defaultPage() {
 		ModelAndView model = new ModelAndView();
 		model.setViewName("index");
 		return model;
 	}
+
+
+	@RequestMapping(value = "/formreg")
+	public String reg(Model model)
+	{
+		return "form";
+	}
+
+
+	@RequestMapping(value = "/adduser")
+	public ModelAndView registration(
+			@RequestParam(value = "login") String login,
+			@RequestParam(value = "mail") String email,
+			@RequestParam(value = "password") String password,
+			@RequestParam (value = "phone") String phone,
+			@RequestParam (value = "gender") Integer male
+	){
+
+		password = passwordEncoder.encode(password);
+		ModelAndView modelAndView = new ModelAndView();
+		User user = new User(login, password, true, email, phone, male );
+		UserRole role = new UserRole(user, "ROLE_USER");
+       /* Set<UserRole> roles = new HashSet<UserRole>();
+		roles.add(role);
+		user.setUserRole(roles);*/
+
+
+		myService.RegisterUser(user, role	);
+		modelAndView.setViewName("login");
+
+
+		return  modelAndView;
+	}
+
 
 
 	//admin part ----------------------------------------------------------

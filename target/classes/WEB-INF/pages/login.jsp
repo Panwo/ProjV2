@@ -64,6 +64,8 @@
 					<td colspan='2'><input name="submit" type="submit"
 						value="submit" /></td>
 				</tr>
+
+				<a href="/formreg" id = "reg" > Reg</a>
 			</table>
 
 			<input type="hidden" name="${_csrf.parameterName}"
@@ -71,6 +73,14 @@
 
 		</form>
 	</div>
+
+<script>
+	$("#reg").click(function(){
+		window.location.href = '/formreg'
+
+	})
+
+</script>
 
 </body>
 </html>

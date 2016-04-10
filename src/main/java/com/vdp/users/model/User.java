@@ -16,7 +16,7 @@ public class User {
 	@Column(name = "enabled", nullable = false)
 	private boolean enabled;
 
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "user", cascade=CascadeType.ALL)
 	private Set<UserRole> userRole = new HashSet<UserRole>(0);
 
 	@Column(name  = "email")
@@ -35,6 +35,15 @@ public class User {
 		this.username = username;
 		this.password = password;
 		this.enabled = enabled;
+	}
+
+	public User(String username, String password, boolean enabled, String email, String phone, Integer male) {
+		this.username = username;
+		this.password = password;
+		this.enabled = enabled;
+		this.email = email;
+		this.phone = phone;
+		this.male = male;
 	}
 
 	public User(String username, String password, boolean enabled, Set<UserRole> userRole) {

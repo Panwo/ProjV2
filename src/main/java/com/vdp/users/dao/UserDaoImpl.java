@@ -2,6 +2,7 @@ package com.vdp.users.dao;
 
 import com.vdp.users.model.Products;
 import com.vdp.users.model.User;
+import com.vdp.users.model.UserRole;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -29,6 +30,11 @@ public class UserDaoImpl implements UserDao {
 	  return list.get(0);
   }
 
+	@Override
+	public  void registerNew(User user, UserRole role){
+		entityManager.merge(user);
+		entityManager.merge(role);
+	}
 
 
 	/*@SuppressWarnings("unchecked")

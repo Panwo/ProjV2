@@ -1,9 +1,11 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<HTML
+><HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 
-<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-
-<link rel ="stylesheet" href = "../../formstyles.css">
 <script>
 
     d= document;
@@ -33,17 +35,7 @@ if ( d.contact_form.contact_name.value == "" )
                 valid = false;
         }
 
-        if ( d.contact_form.age.selectedIndex == 0 )
-        {        s+=", age";
-                
-                valid = false;
-        }
 
-        if ( d.contact_form.terms.checked == false )
-        {        s+=", confirm";
-               
-                valid = false;
-        }
          if ( d.contact_form.login.value == ""|| log.length <3 )
         {        s+=", login";
                
@@ -108,14 +100,10 @@ if (valid == false){
     
     <div id = backs>
 <div id = form>
-<FORM name="contact_form" method="post" action="dumb.htm" onsubmit="return validate_form ( ); ">
+<FORM name="contact_form" method="post" action="/adduser" onsubmit="return validate_form ( ); ">
 
 <H2>Пожалуйста введите ваши данные.</H2>
     <br>
-  Ваше имя:  
-    </br>
-     <INPUT type="text" name="contact_name">
-        <br>
   Ваше логин:
         </br>
     <INPUT type="text" name="login"> 
@@ -151,8 +139,8 @@ if (valid == false){
                     Ваш пол: 
                         </br>
                     <br>
-<INPUT type="radio" name="gender" value="Male"> Мужской
-<INPUT type="radio" name="gender" value="Female"> Женский</br>
+<INPUT type="radio" name="gender" value="1"> Мужской
+<INPUT type="radio" name="gender" value="0"> Женский</br>
  
 
 
