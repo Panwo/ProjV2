@@ -8,8 +8,9 @@
      <!----------------классический-------------------------------->
 
     <title>Подарки</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="/style/style.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="/style/styleff.css" />
+    <link rel ="stylesheet" href = "/style/bootstrap.min.css">
 
 </head>
 <body>
@@ -23,17 +24,14 @@
  <div id="men">
  <a class="btn btn-primary"  href="html.html">Главная</a>
     <a class="btn btn-primary" href="/top/7">Топ</a>
-
-
- <a class="btn btn-primary" href="/%D0%BE%D0%BF%D1%82%D0%BE%D0%B2%D0%B8%D0%BA%D0%B0%D0%BC.html">Контакты</a>
-
+     <a class="btn btn-primary" href="/contacts">Контакты</a>
      <a class="btn btn-primary" href="/login">Вход/регистрация</a>
 
   <div id="bar">
 
-     <!------------------future form
-      <div id="container">
 
+      <div id="container">
+<!----------------------------------
             <div id="loginContainer">
                 <a href="#" id="loginButton"><span>Login</span><em></em></a>
                 <div style="clear:both"></div>
@@ -76,12 +74,12 @@
                  <a tabindex="-1" href="#">Для праздника</a>
                   <ul class="dropdown-menu">
                   <li><a tabindex="-1" href="/top/4">День рождения</a></li>
-                      <li><a tabindex="-1" href="/top/6">Новый год</a></li>
+                      <li><a tabindex="-1" href="/top/5">Новый год</a></li>
 
                 
     </ul>
              <li><a tabindex="-1" href="#">Праздничные акции</a></li>
-            <li><a tabindex="-1" href="#"></a></li>
+
                  
 </ul>
           </div>

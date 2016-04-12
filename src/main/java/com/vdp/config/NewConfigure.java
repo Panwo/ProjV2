@@ -10,10 +10,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class NewConfigure extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(final ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+        registry.addResourceHandler("/js/**").addResourceLocations("/WEB-INF/js/");
+        registry.addResourceHandler("/style/**").addResourceLocations("/WEB-INF/style/");
+        registry.addResourceHandler("/img/**").addResourceLocations("/WEB-INF/img/");
+          registry.addResourceHandler("/bdimages/**").addResourceLocations("/WEB-INF/dbimages/");
     }
-
-
-
 }
 

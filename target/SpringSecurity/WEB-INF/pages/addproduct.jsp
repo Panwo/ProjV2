@@ -6,7 +6,7 @@
 <HTML>
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel ="stylesheet" href = "../../formstyles.css">
+
 </HEAD>
 
 <BODY>
@@ -14,7 +14,7 @@
     <div id = backs>
 <div id = form>
 
-<FORM name="contact_form"  enctype="multipart/form-data"  method="post" >
+<FORM name="contact_form"  enctype="multipart/form-data" action="/addproduct"  method="post" >
 
 <H2>Добавить продукт в базу данных</H2>
     <br>

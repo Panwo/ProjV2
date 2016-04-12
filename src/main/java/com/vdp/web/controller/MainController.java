@@ -30,7 +30,6 @@ public class MainController   {
 	@Autowired
 	MyService myService;
 
-
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
@@ -41,7 +40,7 @@ public class MainController   {
 		return model;
 	}
 
-
+//----REGISTRATION--------------------------------------------------------
 	@RequestMapping(value = "/formreg")
 	public String reg(Model model)
 	{
@@ -65,15 +64,24 @@ public class MainController   {
        /* Set<UserRole> roles = new HashSet<UserRole>();
 		roles.add(role);
 		user.setUserRole(roles);*/
-
-
 		myService.RegisterUser(user, role	);
 		modelAndView.setViewName("login");
-
-
 		return  modelAndView;
 	}
+//-------------------------------------------------------------------------------
 
+
+
+	@RequestMapping(value = "/addtobasket")
+	public ModelAndView addToBacket(
+			@RequestParam(value = "toAdd[]", required = false)  long [] toAdd)
+	{
+		ModelAndView modelAndView = new ModelAndView();
+
+
+
+		return modelAndView;
+	}
 
 
 	//admin part ----------------------------------------------------------
@@ -112,13 +120,9 @@ public class MainController   {
 			   myService.deleteManyProducts(toDelete);
 			   modelAndView.addObject("products", myService.displayProducts());
 			   modelAndView.setViewName("adminmy");
-
 		   }else modelAndView.setViewName("index");
 
-
-
-
-          return modelAndView;
+		return modelAndView;
 	}
 
 
@@ -152,7 +156,7 @@ public class MainController   {
 		model.setViewName("adminmy");
 		return model;
 	}
-
+//---------------------------------------------------------------------------
 
 
 

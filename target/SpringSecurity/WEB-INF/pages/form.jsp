@@ -4,15 +4,13 @@
 ><HEAD>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-
+    <link href="/style/style.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="/style/formstyle.css" />
 
 <script>
 
     d= document;
-
- 
-
-function validate_form ( )
+    function validate_form ( )
 {
     
     s = "";
@@ -24,48 +22,22 @@ function validate_form ( )
     log = d.contact_form.login.value;
     
      var re = /^([a-z0-9_\-]+\.)*[a-z0-9_\-]+@([a-z0-9][a-z0-9\-]*[a-z0-9]\.)+[a-z]{2,6}$/i;
-if ( d.contact_form.contact_name.value == "" )
-        {       s+= ", name";
-                 valid = false;
-        }
 
-         if ( ( d.contact_form.gender[0].checked == false ) && ( document.contact_form.gender[1].checked == false ) )
-        {        
-                s+=", gender";
-                valid = false;
-        }
+     if ( ( d.contact_form.gender[0].checked == false ) && ( document.contact_form.gender[1].checked == false ) )
+        { s+=", gender"; valid = false;}
 
-
-         if ( d.contact_form.login.value == ""|| log.length <3 )
-        {        s+=", login";
-               
-                valid = false;
-        }
+    if ( d.contact_form.login.value == ""|| log.length <3 )
+        {        s+=", login"; valid = false;}
      if ( d.contact_form.mail.value == "" )
-        {          s+=", mail1";
-                
-                valid = false;
-        }
+        {          s+=", mail1"; valid = false;}
      if ( d.contact_form.mail2.value == "" )
-        {         s+=", mailconfirm";
-                
-                valid = false;
-        }
+        {         s+=", mailconfirm"; valid = false;}
      if ( d.contact_form.password.value == "" )
-        {          s+=", password";
-                
-                valid = false;
-        }
+        {          s+=", password"; valid = false;}
      if ( d.contact_form.password2.value == "" )
-        {         s+=", password2";
-               
-                valid = false;
-        }
+        {         s+=", password2"; valid = false;}
 if ( d.contact_form.phone.value == "" )
-        {        s+=", phone";
-                
-                valid = false;
-        }
+        {        s+=", phone"; valid = false;}
 if (valid == false){ 
     alert ("Вы не заполнили следующие поля:" +s);
 }
@@ -82,10 +54,9 @@ if (valid == false){
     
     if (valid) {
     alert("регистрация успешна!");
-         
+
     }
-    
-        return valid;
+    return valid;
 }
 
      
@@ -100,7 +71,7 @@ if (valid == false){
     
     <div id = backs>
 <div id = form>
-<FORM name="contact_form" method="post" action="/adduser" onsubmit="return validate_form ( ); ">
+<FORM name="contact_form" method="post" <%--action="/adduser"--%> onsubmit="return validate_form (); ">
 
 <H2>Пожалуйста введите ваши данные.</H2>
     <br>
@@ -125,7 +96,7 @@ if (valid == false){
                     <INPUT type="text" name="password">
                        
                     <br>    
-            подтвердите ваш пароль: 
+                      подтвердите ваш пароль:
                         </br>
                 <INPUT type="text" name="password2">
             

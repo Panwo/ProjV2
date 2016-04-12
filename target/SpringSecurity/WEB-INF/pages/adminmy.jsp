@@ -6,12 +6,10 @@
 <head>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel ="stylesheet" href = "../../bootstrap.min.css">
-    <link rel ="stylesheet" href = "../../style.css">
+    <link rel ="stylesheet" href = "/style/bootstrap.min.css">
+    <link rel ="stylesheet" href = "/style/style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    </script>
-
 
     <meta charset ="urf-8">
     <title>Подарки</title>
@@ -25,7 +23,7 @@
     <div class="row" id = "header">
         <div class = "span12">
             <div class = "logo1">
-                <img src="2.jpg" class="img-circle">
+                <img src="img/2.jpg" class="img-circle">
             </div>
 
             <div id="men"> <a class="btn btn-primary"  href="index.html">Главная</a>
@@ -74,8 +72,9 @@
 
                 <!----------------------------insert here ---------------------------------------->
                 <c:forEach items="${products}" var = "products">
-                    <input type="checkbox" name="toDelete[]" value="${products.id}" id="checkbox_${products.id}"/>
+
                     <div class="products-main">
+                        <input type="checkbox" name="toDelete[]" value="${products.id}" id="checkbox_${products.id}"/>
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
                             <div class="product-img"><a href = "#"><img src="111.jpg" width="320" height="240" align="middle" /></a> </div>

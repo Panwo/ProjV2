@@ -2,47 +2,259 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf8f537-a945-4827-9184-d9765ef46576" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.min — копия.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/formstyles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/styleff.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap.min — копия.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/formstyles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/styleff.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap.min — копия.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/formstyles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/styleff.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/403.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addgroup.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addproduct.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/adminmy.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/anonview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/basket.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/form.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/gview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/userview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/style/bootstrap.min — копия.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/403.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/addgroup.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/addproduct.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/adminmy.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/anonview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/basket.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/form.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/gview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/userview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bdimages/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/img/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/examples/403.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/examples/admin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/examples/hello.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/examples/login-form.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/examples/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/bg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/buttonbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/buttonbgHover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/food.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/loginArrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/loginbuttonbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/purty_wood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/retina_wood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/img/ricepaper_v3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/js/buttonjs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/js/jquery-1.11.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/js/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/style/bootstrap.min — копия.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/style/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/style/formstyles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/style/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/style/styleff.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bdimages/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/img/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/examples/403.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/examples/admin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/examples/hello.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/examples/login-form.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/examples/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/bg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/buttonbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/buttonbgHover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/food.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/loginArrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/loginbuttonbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/purty_wood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/retina_wood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/img/ricepaper_v3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/js/buttonjs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/js/jquery-1.11.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/js/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/style/bootstrap.min — копия.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/style/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/style/formstyles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/style/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpringSecurity/style/styleff.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/403.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/addgroup.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/addproduct.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/adminmy.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/anonview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/basket.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/form.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/gview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/userview.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bdimages/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/img/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/examples/403.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/examples/admin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/examples/hello.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/examples/login-form.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/examples/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/bg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/buttonbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/buttonbgHover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/food.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/loginArrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/loginbuttonbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/purty_wood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/retina_wood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/img/ricepaper_v3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/js/buttonjs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/js/jquery-1.11.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/js/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/style/bootstrap.min — копия.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/style/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/style/formstyles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/style/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/style/styleff.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity.war" afterPath="$PROJECT_DIR$/target/SpringSecurity.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/config/NewConfigure.class" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/config/NewConfigure.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/config/SecurityConfig.class" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/config/SecurityConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/users/dao/ProductsDAOImpl.class" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/users/dao/ProductsDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/users/model/Products.class" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/users/model/Products.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/users/model/User.class" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/users/model/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/web/controller/MainController.class" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/com/vdp/web/controller/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vdp/config/NewConfigure.class" afterPath="$PROJECT_DIR$/target/classes/com/vdp/config/NewConfigure.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vdp/config/SecurityConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/vdp/config/SecurityConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vdp/users/dao/ProductsDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/vdp/users/dao/ProductsDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vdp/users/model/Products.class" afterPath="$PROJECT_DIR$/target/classes/com/vdp/users/model/Products.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vdp/users/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/vdp/users/model/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vdp/web/controller/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/vdp/web/controller/MainController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newPRoj.iml" afterPath="$PROJECT_DIR$/newPRoj.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/config/NewConfigure.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/config/NewConfigure.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/config/SecurityConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/ProductsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/ProductsDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/users/model/Products.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/users/model/Products.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/users/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/users/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/users/model/UserRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/users/model/UserRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/users/service/MyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/users/service/MyService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addgroup.jsp" afterPath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addgroup.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addproduct.jsp" afterPath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addproduct.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/form.jsp" afterPath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/form.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/login.jsp" afterPath="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/addgroup.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/addgroup.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/addproduct.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/addproduct.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/form.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/form.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/login.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/classes/WEB-INF/pages/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/addgroup.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/addgroup.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/addproduct.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/addproduct.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/adminmy.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/adminmy.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/anonview.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/anonview.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/basket.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/basket.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/button.html" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/button.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/form.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/form.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/login.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/addgroup.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/pages/addgroup.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/addproduct.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/pages/addproduct.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/form.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/pages/form.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/login.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/pages/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/userview.jsp" afterPath="$PROJECT_DIR$/target/SpringSecurity/WEB-INF/pages/userview.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/1.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/10.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/3.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/4.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/5.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/6.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/7.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/8.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/8.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bdimages/9.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bdimages/9.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/css/bootstrap-responsive.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/css/bootstrap-responsive.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/img/Thumbs.db" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/img/Thumbs.db" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/glyphicons-halflings-white.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/img/glyphicons-halflings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/examples/403.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/403.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/examples/admin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/admin.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/examples/hello.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/hello.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/examples/login-form.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/login-form.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/examples/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/login.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/2.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/Thumbs.db" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/Thumbs.db" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/bar.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/bg2.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/bg2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/buttonbg.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/buttonbg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/buttonbgHover.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/buttonbgHover.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/food.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/food.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/img/glyphicons-halflings-white.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/glyphicons-halflings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/loginArrow.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/loginArrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/loginbuttonbg.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/loginbuttonbg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/purty_wood.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/purty_wood.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/retina_wood.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/retina_wood.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/img/ricepaper_v3.png" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/ricepaper_v3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/js/bootstrap.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/js/buttonjs.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/buttonjs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/js/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery-1.11.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/js/login.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/login.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/style/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/style/formstyles.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/formstyles.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/style/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/style/styleff.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/styleff.css" />
     </list>
     <ignored path="newPRoj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,6 +287,10 @@
         <option name="myItemId" value="MySQL - shopv2@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="users_product" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
     <PATH>
       <PATH_ELEMENT>
@@ -99,24 +315,6 @@
         <option name="myItemId" value="MySQL - shopv2@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="category_products" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - shopv2@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="category" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
     <PATH>
       <PATH_ELEMENT>
@@ -130,97 +328,14 @@
     <favorites_list name="newPRoj" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.72921616">
+    <splitter split-orientation="horizontal" split-proportion="0.2597826">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.89819">
-                  <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
-                  <folding>
-                    <element signature="e#1564#1565#0" expanded="true" />
-                    <element signature="e#1584#1585#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/examples/login.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="14.5">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/AppConfig.java">
+          <file leaf-file-name="NewConfigure.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/NewConfigure.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
-                  <folding>
-                    <element signature="e#3600#3601#0" expanded="true" />
-                    <element signature="e#3644#3645#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.037037">
-                  <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDaoImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-14.777778">
-                  <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MyService.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/service/MyService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#1278#1279#0" expanded="true" />
-                    <element signature="e#1319#1320#0" expanded="true" />
-                    <element signature="e#1463#1464#0" expanded="true" />
-                    <element signature="e#1510#1511#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserRole.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/UserRole.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.3703704">
-                  <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Category.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="26" column="64" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="64" />
+                  <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
@@ -230,21 +345,39 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Products.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="13" column="51" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="51" />
+                  <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="userview.jsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/userview.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.42494714">
+                  <caret line="153" column="28" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
                   <folding>
-                    <element signature="method#Products#0;class#Products#0" expanded="false" />
-                    <element signature="method#Products#1;class#Products#0" expanded="false" />
-                    <element signature="method#Products#2;class#Products#0" expanded="false" />
+                    <element signature="e#3527#4055#0#HTML" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/SecurityConfig.java">
+          <file leaf-file-name="anonview.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/anonview.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                <state vertical-scroll-proportion="-0.65384614">
+                  <caret line="13" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="adminmy.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminmy.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-83.73077">
+                  <caret line="165" column="9" selection-start-line="152" selection-start-column="0" selection-end-line="165" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -253,22 +386,88 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="form.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/form.jsp">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.038462">
-                  <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
+                <state vertical-scroll-proportion="0.33474576">
+                  <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="83" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="basket.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basket.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.27813163">
-                  <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+                <state vertical-scroll-proportion="-14.074074">
+                  <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+                  <folding>
+                    <element signature="e#913#923#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Category.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#351#352#0" expanded="false" />
+                    <element signature="e#401#402#0" expanded="false" />
+                    <element signature="e#663#664#0" expanded="false" />
+                    <element signature="e#713#714#0" expanded="false" />
+                    <element signature="e#747#748#0" expanded="false" />
+                    <element signature="e#775#776#0" expanded="false" />
+                    <element signature="e#802#803#0" expanded="false" />
+                    <element signature="e#827#828#0" expanded="false" />
+                    <element signature="e#867#868#0" expanded="false" />
+                    <element signature="e#903#904#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/admin.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="23" column="63" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="63" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/SecurityConfig.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -296,18 +495,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mkyong/users/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mkyong/config/core/NewConfigure.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/basket.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/js/login.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/js/buttonjs.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/button.html" />
-        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mkyong/config/NewConfigure.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mkyong/config/core/SpringMvcInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/style/styleff.css" />
         <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/style/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/mkyong/users/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/hello.jsp" />
@@ -321,15 +508,11 @@
         <option value="dbtable:/2b4a19c/6059776f-5392-4123-bd5f-1e943f89b7c7/shopv2.products" />
         <option value="$PROJECT_DIR$/src/main/java/com/mkyong/config/SecurityConfig.java" />
         <option value="dbtable:/2b4a19c/6059776f-5392-4123-bd5f-1e943f89b7c7/shopv2.user_roles" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vdp/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/config/core/SpringSecurityInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/ProductsDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/model/Products.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vdp/config/NewConfigure.java" />
         <option value="dbtable:/2b4a19c/97378cfe-2f8c-4bb1-a458-97b32ddbcebd/proj.users" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/ProductsDAOImpl.java" />
         <option value="dbtable:/2b4a19c/6059776f-5392-4123-bd5f-1e943f89b7c7/shopv2.category" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/model/Category.java" />
         <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/userview.jsp" />
@@ -342,10 +525,26 @@
         <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addgroup.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/model/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/form.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/service/MyService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/pages/basket.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/style/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/indexcc.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addproduct.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/button.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/anonview.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/dao/ProductsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vdp/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vdp/config/NewConfigure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vdp/users/model/Products.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminmy.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/userview.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java" />
       </list>
     </option>
@@ -377,8 +576,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1370" />
-    <option name="height" value="772" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -424,7 +623,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -461,7 +662,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,7 +692,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newPRoj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjV2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newPRoj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjV2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -550,10 +819,6 @@
               <option name="myItemId" value="users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -615,57 +880,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newPRoj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjV2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vdp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../h2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Spring" />
     <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="139" />
@@ -686,16 +915,17 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\java\курсы pro\newPRoj\src\main\resources" />
-      <recent name="E:\java\курсы pro\newPRoj\src\main\resources\WEB-INF\pages\examples" />
-      <recent name="E:\java\курсы pro\newPRoj\src\main" />
-      <recent name="E:\java\курсы pro\newPRoj\src\main\java\com\mkyong\config" />
-      <recent name="E:\java\курсы pro\newPRoj\src\main\resources\WEB-INF\pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\курсы pro\proj2\ProjV2\src\main\webapp\WEB-INF\pages" />
       <recent name="E:\java\курсы pro\newPRoj\src\main\resources\WEB-INF\pages" />
       <recent name="E:\java\курсы pro\newPRoj\src\main\webapp\WEB-INF\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\курсы pro\proj2\ProjV2\src\main\webapp\WEB-INF\pages" />
+      <recent name="E:\java\курсы pro\proj2\ProjV2\src\main\webapp\WEB-INF\examples" />
+      <recent name="E:\java\курсы pro\proj2\ProjV2\src\main\webapp\WEB-INF" />
+      <recent name="E:\java\курсы pro\proj2\ProjV2\src\main\webapp" />
+      <recent name="E:\java\курсы pro\newPRoj\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed (1)">
@@ -1302,39 +1532,44 @@
       <workItem from="1460054982318" duration="7951000" />
       <workItem from="1460113125362" duration="12617000" />
       <workItem from="1460190471241" duration="10250000" />
-      <workItem from="1460283856425" duration="6141000" />
+      <workItem from="1460283856425" duration="14225000" />
+      <workItem from="1460307449912" duration="11877000" />
+      <workItem from="1460383362565" duration="11655000" />
+      <workItem from="1460441957704" duration="2018000" />
+      <workItem from="1460454064809" duration="631000" />
+      <workItem from="1460461768802" duration="5120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152748000" />
+    <option name="totallyTimeSpent" value="192133000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="772" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31873113" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31768388" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6791862" sideWeight="0.5030534" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15492958" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15492958" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14084508" sideWeight="0.50610685" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15492958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277439" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21909232" sideWeight="0.49694657" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17050691" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277439" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1904762" sideWeight="0.49389312" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16901408" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2389313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22617246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118320614" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7167449" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.077912256" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20178041" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20178041" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7167449" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1357,61 +1592,13 @@
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/userview.jsp</url>
           <line>106</line>
           <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
-          <line>109</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
-          <line>110</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
-          <line>111</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
-          <line>112</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
-          <line>115</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java</url>
-          <line>107</line>
-          <properties class="com.vdp.web.controller.MainController" method="delproduct" />
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1420,125 +1607,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/OrdersDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/OrdersDAOIMPL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/service/MyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#798#799#0" expanded="false" />
-            <element signature="e#844#845#0" expanded="false" />
-            <element signature="e#918#919#0" expanded="false" />
-            <element signature="e#966#967#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="false" />
-            <element signature="e#1165#1166#0" expanded="false" />
-            <element signature="e#1209#1210#0" expanded="false" />
-            <element signature="e#1775#1776#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="e#1897#1898#0" expanded="false" />
-            <element signature="e#1938#1939#0" expanded="false" />
-            <element signature="e#2036#2037#0" expanded="false" />
-            <element signature="e#2085#2086#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/CategoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/CategoryDAOIML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#351#352#0" expanded="false" />
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#713#714#0" expanded="false" />
-            <element signature="e#747#748#0" expanded="false" />
-            <element signature="e#775#776#0" expanded="false" />
-            <element signature="e#802#803#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#867#868#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/adminmy.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addgroup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bdimages/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Orders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/core/SpringSecurityInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/NewConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1563,18 +1635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/core/SpringMvcInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/ProductsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1585,52 +1649,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="104" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/gview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.884615">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/examples/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.0">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/userview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-39.807693">
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/ProductsDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/CategoryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1638,41 +1660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/adminmy.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/OrdersDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/examples/hello.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04009434">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/examples/login-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1680,31 +1667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addproduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="65" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-94.80769">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.115385">
-          <caret line="60" column="70" selection-start-line="55" selection-start-column="20" selection-end-line="60" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1712,15 +1674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14579439">
           <caret line="46" column="5" selection-start-line="42" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/addgroup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.076923">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1728,43 +1681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="26" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Products.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="51" />
-          <folding>
-            <element signature="method#Products#0;class#Products#0" expanded="false" />
-            <element signature="method#Products#1;class#Products#0" expanded="false" />
-            <element signature="method#Products#2;class#Products#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/pages/form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.038462">
-          <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27813163">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1772,17 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3703704">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.037037">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1798,50 +1703,296 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-          <folding>
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1319#1320#0" expanded="true" />
-            <element signature="e#1463#1464#0" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="57" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/img/food.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/img/bg2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/img/bar.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/img/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery-1.11.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/core/SpringSecurityInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/core/SpringMvcInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="1" selection-start-line="6" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
+          <caret line="27" column="24" selection-start-line="21" selection-start-column="0" selection-end-line="27" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/buttonjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03820225">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/styleff.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/button.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17435898">
+          <caret line="10" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addproduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addgroup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/hello.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="e#3600#3601#0" expanded="true" />
-            <element signature="e#3644#3645#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/ProductsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1391162">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/dao/OrdersDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055646483">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.461538">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/examples/login-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08717949">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#401#402#0" expanded="false" />
+            <element signature="e#663#664#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#802#803#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+            <element signature="e#867#868#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/NewConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/examples/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basket.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/Products.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/anonview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="13" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/users/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.074074">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="e#913#923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminmy.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-83.73077">
+          <caret line="165" column="9" selection-start-line="152" selection-start-column="0" selection-end-line="165" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/userview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42494714">
+          <caret line="153" column="28" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
+          <folding>
+            <element signature="e#3527#4055#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vdp/web/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89819">
-          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
-          <folding>
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.33474576">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="83" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1851,7 +2002,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>newPRoj:war</last-edited>
+          <last-edited>newPRoj:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

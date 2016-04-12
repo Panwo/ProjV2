@@ -1,7 +1,9 @@
 package com.vdp.users.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,6 +20,15 @@ public class User {
 
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "user", cascade=CascadeType.ALL)
 	private Set<UserRole> userRole = new HashSet<UserRole>(0);
+
+	@ManyToMany
+	@JoinTable(
+ 			name = "users_product",
+			joinColumns ={@JoinColumn (name = "users_username",  referencedColumnName = "username")},
+			inverseJoinColumns = {@JoinColumn(name = "Products_idProducts", referencedColumnName = "idProducts")}
+	)
+	List<Products> productsList = new ArrayList<Products>();
+
 
 	@Column(name  = "email")
 	private String email;

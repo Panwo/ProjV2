@@ -1,16 +1,26 @@
-<!Dictype html>
+<!Doctype html>
 <html>
     <head>
-          <script src="js/jquery-1.11.1.min.js"> </script>
-          <link rel="stylesheet" href="../../bootstrap.min.css">
+         
+         
+          <!Doctype html>
+<html>
+    <head>
+         
+         
+          <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+          <script src=  "/"
+        
         <style>
         
             #myform{
-               height: 150px;
-               width:  280px;
+               height: 200px;
+               width:  290px;
                margin-top: 79px;
                 margin-left: 100px;
                 background-color: red;
+              align-content:  center;
                 text-align: center;
                 border-radius: 10px;
                   display: none;
@@ -18,38 +28,43 @@
             }
             
             
+           
             
-            
+</style>
         
-        </style>
+        
     </head>
     
     <body>
-        <button id = "btn1" class = "btn btn-danger" >Buy</button>
+        <button data-id = "2" class = "btn btn-danger" >Buy</button>
+        <button id = "btn3" class = "btn btn-danger" >Buy</button>
+        <button id = "btn4" class = "btn btn-danger" >Buy</button>
+        <button id = "btn5" class = "btn btn-danger" >Buy</button>
         
         <p></p>
         
         <br></br>
         
         <script type="text/javascript">
+            
           $(function()   {
               
-              var btn =  $('#btn1');
+              var btn =  $('.btn-danger');
               var form = $('#myform');
               var formbtn =   $('#submit');
-             
+                
                btn.on ('mouseup', function(){
+                    var id = $(this).attr("data-id");
+                   
                      form.toggle(200);
                   
                 
            });
-        
-           formbtn.on('mouseup', function(){
-              btn.html('bought!');
-               btn.attr('disabled', 'disebled');
               
-               
-               form.toggle(2000);
+         formbtn.on('mouseup', function(){
+              btn.html('bought!');
+                btn.attr('disabled', 'disebled');
+                  form.html('Мы вам перезвоним!!!').delay(2000).toggle(500);
            });
               
               
@@ -59,10 +74,11 @@
         
         </script>
 
-    </script>
+   
 
         <div id = "myform">
         
+        <div id = form>
         <form id = "my" onsubmit="return false;">
         <div class="form-group">
     <label for="exampleInputEmail1">Name</label>
@@ -75,15 +91,17 @@
  
   
   <button id="submit"  class="btn btn-default">Submit</button>
+            </div>
 </form>
        
     </div>
+    
        
-       
-       <script src="js/jquery-1.11.1.min.js"> </script>
-        
-      
-        </body>
+      </body>
         
        
 </html>
+
+        
+       
+

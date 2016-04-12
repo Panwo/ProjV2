@@ -27,6 +27,8 @@ public class ProductsDAOImpl implements  ProductsDAO  {
     }
     //-----------------------------------------------------------------------
 
+
+
     // admin otions ----------------------------------------------------------
     @Override
     public  void deleteOne(Products product){

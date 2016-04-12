@@ -5,10 +5,6 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel ="stylesheet" href = "../../bootstrap.min.css">
-    <link rel ="stylesheet" href = "../../style.css">
-    <link rel="stylesheet" href="../../styleff.css" />
-
     <script src="js/jquery-1.11.1.min.js"> </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
@@ -72,7 +68,7 @@
             <h1>Ваши заказы:</h1>
             <!----------------------------insert jsp here----------------------------------------------->
 
-
+            <!------------------------------------------------------------------->
         </div>
         <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
     </div>

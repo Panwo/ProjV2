@@ -51,12 +51,7 @@ public class Products implements Serializable {
         List<Category> categories = new ArrayList<Category>();
 
 
-    @ManyToMany
-    @JoinTable(
-            name = "users_product",
-            joinColumns ={@JoinColumn (name = "Products_idProducts", referencedColumnName = "idProducts")},
-            inverseJoinColumns = {@JoinColumn(name = "users_username", referencedColumnName = "username")}
-    )
+      @ManyToMany(mappedBy = "productsList")
       List<User> usersList = new ArrayList<User>();
 
 

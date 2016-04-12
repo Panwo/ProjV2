@@ -26,12 +26,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
 	}
 
-
 	@Override
 	public void configure(WebSecurity web) throws Exception {
 		web.ignoring()
-				.antMatchers("**/style/**");
+				.antMatchers("/js/**")
+				.antMatchers("/style/**")
+				.antMatchers("/img/**")
+				.antMatchers("/dbimages/**");
+
 	}
+
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
