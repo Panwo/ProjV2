@@ -7,8 +7,7 @@
 
     <link href="/style/style.css" rel="stylesheet" type="text/css" >
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
-    <script src="js/jquery-1.11.1.min.js">
-    </script>
+    <script src=" http://code.jquery.com/jquery-latest.min.js"></script>
     <meta charset ="urf-8">
     <title>user page</title>
 </head>
@@ -25,8 +24,8 @@
             </div>
 
             <div id="men"> <a class="btn btn-primary"  href="/">Главная</a>
-                <a class="btn btn-primary" href="/dostavka">Доcтавка</a>
-                <a class="btn btn-primary" href="/">Контакты</a>
+                <a class="btn btn-primary"  >Доcтавка</a>
+                <a class="btn btn-primary" href="/basket">Корзина</a>
                 <div id = "userr">
                     Привет,  ${pageContext.request.userPrincipal.name}
                 </div>
@@ -86,7 +85,7 @@
 
             </div>
 
-            <button id  = "send" class="btn btn-danger">Добавить в корзину</button>
+            <a class="btn btn-primary" id = 'send' >Добавить в корзину</a>
 
 
             <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
@@ -144,16 +143,19 @@
 
 </div>
 
-<script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#send').click(function () {
+                    alert("dsa");
+            var data2 = {'toAdd[]': []};
+                    $(":checked").each(function () {
+                        data2['toAdd[]'].push($(this).val());
+                    });
+            $.post("/addtobasket", data2);
 
-    $('#send').click(function(){
-        var data = { 'toAdd[]' : []};
-        $(":checked").each(function() {
-            data['toAdd[]'].push($(this).val());
-        });
-        $.post("/addtobasket", data);
-        location.reload();
-    })
+                }
+        );
+    });
 
 
 

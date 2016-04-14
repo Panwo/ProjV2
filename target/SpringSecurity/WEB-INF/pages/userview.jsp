@@ -7,8 +7,7 @@
 
     <link href="/style/style.css" rel="stylesheet" type="text/css" >
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
-    <script src="js/jquery-1.11.1.min.js">
-    </script>
+    <script src=" http://code.jquery.com/jquery-latest.min.js"></script>
     <meta charset ="urf-8">
     <title>user page</title>
 </head>
@@ -25,8 +24,8 @@
             </div>
 
             <div id="men"> <a class="btn btn-primary"  href="/">Главная</a>
-                <a class="btn btn-primary" href="/dostavka">Доcтавка</a>
-                <a class="btn btn-primary" href="/">Контакты</a>
+                <a class="btn btn-primary"  >Доcтавка</a>
+                <a class="btn btn-primary" href="/basket">Корзина</a>
                 <div id = "userr">
                     Привет,  ${pageContext.request.userPrincipal.name}
                 </div>
@@ -70,6 +69,7 @@
 
                 <c:forEach items="${products}" var = "products">
                     <div class="products-main">
+                        <input type="checkbox" name="toAdd[]" value="${products.id}" id="checkbox_${products.id}"/>
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
                             <div class="product-img"><a href = "#"><img src="${products.image}" width="169" height="100" align="middle" /></a> </div>
@@ -85,6 +85,7 @@
 
             </div>
 
+            <a class="btn btn-primary" id = 'send' >Добавить в корзину</a>
 
 
             <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
@@ -113,6 +114,9 @@
             }})();</script>
         <div class="pluso" data-background="none;" data-options="medium,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="vkontakte,facebook,google,email"></div>
 
+
+
+
         <div class="adressa">
             <a class="c__w_y" href="/content/7-contacts/"     rel="nofollow">Ждём Вас по адресу</a>
             <div class  = "blockkon">
@@ -138,6 +142,24 @@
 
 
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#send').click(function () {
+                    alert("dsa");
+            var data2 = {'toAdd[]': []};
+                    $(":checked").each(function () {
+                        data2['toAdd[]'].push($(this).val());
+                    });
+            $.post("/addtobasket", data2);
+
+                }
+        );
+    });
+
+
+
+</script>
 
 </body>
 

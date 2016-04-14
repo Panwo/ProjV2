@@ -9,6 +9,7 @@
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
     <link rel ="stylesheet" href = "/style/style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <meta charset ="urf-8">
@@ -27,9 +28,10 @@
             </div>
 
             <div id="men"> <a class="btn btn-primary"  href="index.html">Главная</a>
-                <a class="btn btn-primary"  href="/pruductpp">Добавить товары</a>
+                <a class="btn btn-primary"  href="/pruductpp"> Добавить товары</a>
                 <a class="btn btn-primary" id="delete_product"  >Удалить выбранные</a>
                  <a class = "btn-primary" href = "/grouppp"> Добавить группу  </a>
+                <a class = "btn-primary" href = "/showall"> Список юзеров  </a>
                 <a class = "btn btn-" href="javascript:formSubmit()"> Logout</a>
 
             </div>
@@ -117,6 +119,7 @@
                 var h=d[g]('body')[0];
                 h.appendChild(s);
             }})();</script>
+
         <div class="pluso" data-background="none;" data-options="medium,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="vkontakte,facebook,google,email"></div>
 
         <div class="adressa">
@@ -150,12 +153,12 @@
 
 
 <script>
-
     $('#delete_product').click(function(){
         var data = { 'toDelete[]' : []};
         $(":checked").each(function() {
             data['toDelete[]'].push($(this).val());
         });
+
         $.post("/delproduct", data);
         location.reload();
     })

@@ -55,6 +55,31 @@ public class MyService {
 
      // end of admin part---------------------------------------
 
+    @Transactional
+    public  List<Products> findManyProducts (long [] toAdd){
+        return productsDAO.findMany(toAdd);
+    }
+
+    @Transactional
+    public  byte [] getImg(long id ) {
+        return productsDAO.getImage(id);
+    }
+
+    @Transactional
+    public Products getOneProduct(long id ){
+        return productsDAO.findOne(id);
+    }
+
+
+    @Transactional
+    public void updateUser(User user){
+        userDao.update(user);
+    }
+
+    @Transactional
+    public List<User> allUsers(){
+        return userDao.listall();
+    }
 
     @Transactional
     public void RegisterUser(User user, UserRole role){

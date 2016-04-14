@@ -1,9 +1,6 @@
 package com.vdp.web.controller;
 
-import com.vdp.users.model.Category;
-import com.vdp.users.model.Products;
-import com.vdp.users.model.User;
-import com.vdp.users.model.UserRole;
+import com.vdp.users.model.*;
 import com.vdp.users.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
 
@@ -61,10 +59,7 @@ public class MainController   {
 		ModelAndView modelAndView = new ModelAndView();
 		User user = new User(login, password, true, email, phone, male );
 		UserRole role = new UserRole(user, "ROLE_USER");
-       /* Set<UserRole> roles = new HashSet<UserRole>();
-		roles.add(role);
-		user.setUserRole(roles);*/
-		myService.RegisterUser(user, role	);
+		myService.RegisterUser(user, role);
 		modelAndView.setViewName("login");
 		return  modelAndView;
 	}
@@ -76,12 +71,81 @@ public class MainController   {
 	public ModelAndView addToBacket(
 			@RequestParam(value = "toAdd[]", required = false)  long [] toAdd)
 	{
+
 		ModelAndView modelAndView = new ModelAndView();
+		if (toAdd!= null) {
+			Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+			UserDetails userDetail = (UserDetails) auth.getPrincipal();
+			User user = myService.findUserByUsername(userDetail.getUsername());
 
 
+            List<Products> productsList;
+
+			productsList = myService.findManyProducts(toAdd);
+
+			user.setProductsSetAddall(productsList);
+			myService.updateUser(user);
+
+			modelAndView.setViewName("basket");
+
+		} else modelAndView.setViewName("index");
 
 		return modelAndView;
 	}
+
+
+    // переброс на корзину
+	@RequestMapping(value = "/basket")
+	public  ModelAndView basket(){
+		ModelAndView modelAndView = new ModelAndView();
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		UserDetails userDetail = (UserDetails) auth.getPrincipal();
+		User user = myService.findUserByUsername(userDetail.getUsername());
+		modelAndView.setViewName("basket");
+		modelAndView.addObject("products", user.getProductsSet());
+		return modelAndView;
+	}
+
+	//photo mapping
+	@RequestMapping("/try/imgage/{id}")
+	public void getFile(HttpServletRequest request, HttpServletResponse response, @PathVariable("id") long Id) {
+		try {
+			byte[] img = myService.getImg(Id);
+			response.setContentType("image/png");
+			response.getOutputStream().write(img);
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+	}
+
+	@RequestMapping(value = "/showall")
+	public ModelAndView showAll(){
+		ModelAndView modelAndView = new ModelAndView();
+           modelAndView.addObject("users", myService.allUsers());
+                 modelAndView.setViewName("adminmy2");
+		return modelAndView;
+	}
+
+
+	@RequestMapping(value = "/remove")
+	public String deleteFromBasket(@RequestParam(value = "Delete[]", required = false) long [] Delete, Model model)
+	{
+
+	   List<Products> toDelete = myService.findManyProducts(Delete);
+
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		UserDetails userDetail = (UserDetails) auth.getPrincipal();
+
+		User user = myService.findUserByUsername(userDetail.getUsername());
+		Set<Products> test = new TreeSet<Products>( user.getProductsSet());
+		for (Products products : toDelete) {
+			test.remove(products);
+		}
+		user.setProductsSet(test);
+		myService.updateUser(user);
+		return "index";
+	}
+
 
 
 	//admin part ----------------------------------------------------------

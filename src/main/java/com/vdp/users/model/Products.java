@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "products")
-public class Products implements Serializable {
+public class Products implements Serializable , Comparable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -40,6 +40,8 @@ public class Products implements Serializable {
         this.categories = categories;
     }
 
+    @ManyToMany(mappedBy = "productsSet")
+    List<User> usersList = new ArrayList<User>();
 
 
     @ManyToMany
@@ -51,9 +53,14 @@ public class Products implements Serializable {
         List<Category> categories = new ArrayList<Category>();
 
 
-      @ManyToMany(mappedBy = "productsList")
-      List<User> usersList = new ArrayList<User>();
+    @Override
+    public int compareTo(Object o) {
 
+        Products another = (Products) o;
+        if (this.id == another.id) return 0;
+
+        else return 1;
+    }
 
     public void setCategories(List<Category> categories) {
         this.categories = categories;
