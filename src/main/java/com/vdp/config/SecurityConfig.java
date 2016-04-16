@@ -46,13 +46,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		         .antMatchers("/basket/**").access("hasRole('ROLE_USER')")
 		          .antMatchers("/resources/**", "/**").permitAll()
 				 .and().formLogin()
-			.loginPage("/login").defaultSuccessUrl("/index").failureUrl("/login?error")
+			.loginPage("/login").defaultSuccessUrl("/spread").failureUrl("/login?error")
 				.usernameParameter("username")
-				.passwordParameter("password")
-				.and().logout().logoutSuccessUrl("/login?logout")
-				.and().exceptionHandling().accessDeniedPage("/403");
+				.passwordParameter("password");
 
-		         http.csrf().disable();
+				http.logout().permitAll().logoutUrl("/logout").logoutSuccessUrl("/index").invalidateHttpSession(true)
+				.and().exceptionHandling().accessDeniedPage("/403");
+				http.csrf().disable();
 	}
 	
 	@Bean

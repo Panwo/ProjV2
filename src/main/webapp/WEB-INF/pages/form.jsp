@@ -67,7 +67,8 @@ if (valid == false){
 
 </SCRIPT>
 
-</HEAD><BODY>
+</HEAD>
+<BODY>
     
     <div id = backs>
 <div id = form>

@@ -27,12 +27,8 @@
                 <img src="img/2.jpg" class="img-circle">
             </div>
 
-            <div id="men"> <a class="btn btn-primary"  href="index.html">Главная</a>
-                <a class="btn btn-primary"  href="/pruductpp"> Добавить товары</a>
-                <a class="btn btn-primary" id="delete_product"  >Удалить выбранные</a>
-                 <a class = "btn-primary" href = "/grouppp"> Добавить группу  </a>
-                <a class = "btn-primary" href = "/showall"> Список юзеров  </a>
-                <a class = "btn btn-" href="javascript:formSubmit()"> Logout</a>
+            <div id="men">
+                <a class = "btn btn-danger" href="javascript:formSubmit()"> Logout</a>
 
             </div>
 
@@ -44,29 +40,37 @@
 
             <div class="side1">
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
-                    <li><a tabindex="-1" href="#">Для девушек</a></li>
-                    <li><a tabindex="-1" href="#">Для мужчин</a></li>
-                    <li><a tabindex="-1" href="#">Для детей </a></li>
+                    <li><a tabindex="-1" href="/pruductpp">Добавить товары</a></li>
+                    <li><a tabindex="-1" id="delete_product"  href="#">Удалить выбранные</a></li>
+                    <li><a tabindex="-1" href="/grouppp">Добавить группу </a></li>
+                    <li><a tabindex="-1" href="/showall">Список юзеров </a></li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1" href="#">Для праздника</a>
+                        <a tabindex="-1" href="#">Категории:</a>
                         <ul class="dropdown-menu">
                             <li><a tabindex="-1" href="#">День рождения</a></li>
                             <li><a tabindex="-1" href="#">Корпоратив</a></li>
                             <li><a tabindex="-1" href="#">Новый год</a></li>
                             <li><a tabindex="-1" href="#">Женский день</a></li>
                             <li><a tabindex="-1" href="#">Мужской день</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Для праздника</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">День рождения</a></li>
 
+                                    <li><a tabindex="-1" href="#">Новый год</a></li>
+
+
+                                </ul>
                         </ul>
-                    <li><a tabindex="-1" href="#">Праздничные акции</a></li>
-                    <li><a tabindex="-1" href="#"></a></li>
 
                 </ul>
+
             </div>
 
 
         </div>
         <div class="span9 text">
-            <h2  align ="center">Топ продаж</h2>
+            <h2  align ="center">Все товары:</h2>
 
 
             <div class="catalog">
@@ -79,7 +83,7 @@
                         <input type="checkbox" name="toDelete[]" value="${products.id}" id="checkbox_${products.id}"/>
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
-                            <div class="product-img"><a href = "#"><img src="111.jpg" width="320" height="240" align="middle" /></a> </div>
+                            <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="320" height="240" align="middle" /></a> </div>
                             <p class="price">${products.price}<span> грн</span>
                         </div>
                         <p class="bot-dot"></p>

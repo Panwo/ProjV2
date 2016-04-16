@@ -8,9 +8,10 @@
     <link href="/style/style.css" rel="stylesheet" type="text/css" >
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
     <script src="js/jquery-1.11.1.min.js">
+        
     </script>
     <meta charset ="urf-8">
-    <title>an</title>
+    <title>anon</title>
 </head>
 <body>
 
@@ -69,7 +70,7 @@
                     <div class="products-main">
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
-                            <div class="product-img"><a href = "#"><img src="${products.image}" width="169" height="100" align="middle" /></a> </div>
+                            <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
                             <p class="price">${products.price}<span> грн  </span>
                         </div>
                         <p class="bot-dot"></p>

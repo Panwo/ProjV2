@@ -29,7 +29,7 @@
                 <div id = "userr">
                     Привет,  ${pageContext.request.userPrincipal.name}
                 </div>
-                <a class = "btn btn-" href="/login"> Logout</a>
+                <a class = "btn btn-" href="/logout"> Logout</a>
 
             </div>
 
@@ -42,6 +42,7 @@
             <div class="side1">
 
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
+
                     <li><a tabindex="-1" href="/top/1">Для девушек</a></li>
                     <li><a tabindex="-1" href="/top/2">Для мужчин</a></li>
                     <li><a tabindex="-1" href="/top/3">Для детей </a></li>
@@ -51,7 +52,7 @@
                             <li><a tabindex="-1" href="/top/4">День рождения</a></li>
                             <li><a tabindex="-1" href="/top/5">Новый год</a></li>
                         </ul>
-                    <li><a tabindex="-1" href="#">Праздничные акции</a></li>
+                    </li>
                 </ul>
             </div>
 
@@ -72,7 +73,7 @@
                         <input type="checkbox" name="toAdd[]" value="${products.id}" id="checkbox_${products.id}"/>
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
-                            <div class="product-img"><a href = "#"><img src="${products.image}" width="169" height="100" align="middle" /></a> </div>
+                            <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
                             <p class="price">${products.price}<span> грн</span>
                         </div>
                         <p class="bot-dot"></p>

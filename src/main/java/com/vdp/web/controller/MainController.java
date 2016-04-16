@@ -1,7 +1,11 @@
 package com.vdp.web.controller;
 
-import com.vdp.users.model.*;
+import com.vdp.users.model.Category;
+import com.vdp.users.model.Products;
+import com.vdp.users.model.User;
+import com.vdp.users.model.UserRole;
 import com.vdp.users.service.MyService;
+import com.vdp.users.service.UserHelp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
@@ -31,12 +35,36 @@ public class MainController   {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
+	//--Links ------------------------------------------------------------
 	@RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
 	public ModelAndView defaultPage() {
 		ModelAndView model = new ModelAndView();
 		model.setViewName("index");
 		return model;
 	}
+
+	@RequestMapping(value = "/spread")
+	public String makeSpread(){
+		User user = myService.findUserByUsername(UserHelp.getUserr());
+		List <UserRole> roles = new ArrayList<UserRole>();
+		for (Iterator<UserRole> iterator = user.getUserRole().iterator(); iterator.hasNext();){
+			roles.add(iterator.next());
+		}
+
+		if (roles.get(0).getRole().equals("ROLE_USER")) {
+			return "index";
+		}
+		else return "redirect:/admin";
+
+
+	}
+
+	@RequestMapping("/user")
+	public String user ( Model model) {
+		return "userview";
+	}
+
+	//---------------------------------------------------------------------
 
 //----REGISTRATION--------------------------------------------------------
 	@RequestMapping(value = "/formreg")
@@ -66,7 +94,7 @@ public class MainController   {
 //-------------------------------------------------------------------------------
 
 
-
+// ---------------USER PART-------------------------------------------
 	@RequestMapping(value = "/addtobasket")
 	public ModelAndView addToBacket(
 			@RequestParam(value = "toAdd[]", required = false)  long [] toAdd)
@@ -74,12 +102,9 @@ public class MainController   {
 
 		ModelAndView modelAndView = new ModelAndView();
 		if (toAdd!= null) {
-			Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-			UserDetails userDetail = (UserDetails) auth.getPrincipal();
-			User user = myService.findUserByUsername(userDetail.getUsername());
+			User user = myService.findUserByUsername(UserHelp.getUserr());
 
-
-            List<Products> productsList;
+			List<Products> productsList;
 
 			productsList = myService.findManyProducts(toAdd);
 
@@ -146,9 +171,9 @@ public class MainController   {
 		return "index";
 	}
 
+ // ------------------- END OF USER PART--------------------------------------
 
-
-	//admin part ----------------------------------------------------------
+	// -------------------ADMIN PART  ---------------------------------------
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public ModelAndView adminPage() {
 		ModelAndView model = new ModelAndView();
@@ -191,23 +216,21 @@ public class MainController   {
 
 
 	@RequestMapping(value = "/addproduct", method = RequestMethod.POST)
-	public ModelAndView addproduct(@RequestParam (value = "category") long categoryID,
+	public String addproduct(@RequestParam (value = "category") long categoryID,
 								   @RequestParam String description,
 								   @RequestParam String price,
-								   @RequestParam(value="photo") MultipartFile photo
-								   ) throws IOException {
+								   @RequestParam(value="photo") MultipartFile photo,
+								   Model model
+								       ) throws IOException {
 
-		ModelAndView model = new ModelAndView();
+
 		Category category = myService.find(categoryID);
 		List<Category> categoryList = new ArrayList<Category>();
 		categoryList.add(category);
 
 		Products product = new Products(description, price, photo.getBytes(), categoryList);
 		myService.addProduct(product);
-
-		model.addObject("products",myService.displayProducts());
-		model.setViewName("adminmy");
-		return model;
+		return "redirect:/admin";
 	}
 
 	@RequestMapping(value = "/addgroup" , method = RequestMethod.POST)
@@ -220,26 +243,11 @@ public class MainController   {
 		model.setViewName("adminmy");
 		return model;
 	}
-//---------------------------------------------------------------------------
+//------------------------END OF ADMIN PART--------------------------------
 
 
 
 
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	@ResponseStatus(value= HttpStatus.OK)
-	public ModelAndView login(@RequestParam(value = "error", required = false) String error,
-							  @RequestParam(value = "logout", required = false) String logout, HttpServletRequest request) {
-
-		ModelAndView model = new ModelAndView();
-		if (error != null) {
-			model.addObject("error", getErrorMessage(request, "SPRING_SECURITY_LAST_EXCEPTION"));
-		}
-		if (logout != null) {
-			model.addObject("msg", "You've been logged out successfully.");
-		}
-		model.setViewName("login");
-		return model;
-	}
 
 
 	//viewForDifferentUsers------------------------------------------------------------
@@ -279,16 +287,30 @@ public class MainController   {
 	}
 	//----------------------------------------------------------------------------------
 
-	// return user view --------------------------------------------------
-	@RequestMapping("/user")
-	public String user ( Model model) {
-		return "userview";
+
+
+	//-login and errors--------------------------------------------------------
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@ResponseStatus(value= HttpStatus.OK)
+	public ModelAndView login(@RequestParam(value = "error", required = false) String error,
+							  @RequestParam(value = "logout", required = false) String logout, HttpServletRequest request) {
+
+		ModelAndView model = new ModelAndView();
+		if (error != null) {
+			model.addObject("error", getErrorMessage(request, "SPRING_SECURITY_LAST_EXCEPTION"));
+		}
+		if (logout != null) {
+			model.addObject("msg", "You've been logged out successfully.");
+		}
+		model.setViewName("login");
+		return model;
 	}
-	//-------------------------------------------------------------------
+
 
 	// customize the error message  ------------------------------------------------------
 	private String getErrorMessage(HttpServletRequest request, String key) {
 		Exception exception = (Exception) request.getSession().getAttribute(key);
+
 		String error = "";
 		if (exception instanceof BadCredentialsException) {
 			error = "Incorrect username or password";

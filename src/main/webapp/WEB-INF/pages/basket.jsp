@@ -71,7 +71,7 @@
                         <input type="checkbox" name="Delete[]" value="${products.id}" id="checkbox_${products.id}"/>
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
-                            <div class="product-img"><a href = "#"> <img src= "try/image/${products.id}" width="169" height="100" align="middle" /></a> </div>
+                            <div class="product-img"><a href = "#"> <img src= "/try/image/${products.id}" width="169" height="100" align="middle" /></a> </div>
                             <p class="price">${products.price}<span> грн</span>
 
                         </div>

@@ -5,7 +5,9 @@
 <HTML>
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+    <link href="/style/style.css" rel="stylesheet" type="text/css" >
+    <link rel ="stylesheet" href = "/style/bootstrap.min.css">
+    <script src=" http://code.jquery.com/jquery-latest.min.js"></script>
 </HEAD>
 
 <BODY>
