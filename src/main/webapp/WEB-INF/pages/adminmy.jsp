@@ -44,6 +44,7 @@
                     <li><a tabindex="-1" id="delete_product"  href="#">Удалить выбранные</a></li>
                     <li><a tabindex="-1" href="/grouppp">Добавить группу </a></li>
                     <li><a tabindex="-1" href="/showall">Список юзеров </a></li>
+                    <li><a tabindex="-1" href="/showorders">Список Заказов </a></li>
                     <li class="dropdown-submenu">
                         <a tabindex="-1" href="#">Категории:</a>
                         <ul class="dropdown-menu">
@@ -84,7 +85,7 @@
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
                             <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="320" height="240" align="middle" /></a> </div>
-                            <p class="price">${products.price}<span> грн</span>
+                            <p class="price2">${products.price}<span> грн</span>
                         </div>
                         <p class="bot-dot"></p>
                     </div>
@@ -140,11 +141,6 @@
                 <br>
                 Пн–Сб: 10:00-20:00, Вс: 10:00-19:00
 
-            </div>
-        </div>
-        <div class="logo">
-            <div class="logos">
-                <img src="logo.png" height="70px">
             </div>
         </div>
     </div>

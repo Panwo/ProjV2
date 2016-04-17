@@ -2,12 +2,10 @@ package com.vdp.users.service;
 
 
 import com.vdp.users.dao.CategoryDAO;
+import com.vdp.users.dao.OrdersDAO;
 import com.vdp.users.dao.ProductsDAO;
 import com.vdp.users.dao.UserDao;
-import com.vdp.users.model.Category;
-import com.vdp.users.model.Products;
-import com.vdp.users.model.User;
-import com.vdp.users.model.UserRole;
+import com.vdp.users.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,6 +23,9 @@ public class MyService {
 
     @Autowired
     private ProductsDAO productsDAO;
+
+    @Autowired
+    private OrdersDAO ordersDAO;
 
     //admin part---------------------------------------
     @Transactional
@@ -106,4 +107,19 @@ public class MyService {
     public  List<Products> listProducts (Category category){
         return productsDAO.list(category);
     }
+
+
+    // ----------------  Orders --------------------------------------------
+     @Transactional
+    public void addOrder(Orders order){
+         ordersDAO.AddOrder(order);
+     }
+
+
+    @Transactional
+    public List<Orders> viewAllOrders(){
+      return     ordersDAO.showAllOrders();
+    }
+
+  // ------------------END ORDERS -------------------------------------------
 }

@@ -27,12 +27,8 @@
                 <img src="img/2.jpg" class="img-circle">
             </div>
 
-            <div id="men"> <a class="btn btn-primary"  href="index.html">Главная</a>
-                <a class="btn btn-primary"  href="/pruductpp"> Добавить товары</a>
-                <a class="btn btn-primary" id="delete_product"  >Удалить выбранные</a>
-                 <a class = "btn-primary" href = "/grouppp"> Добавить группу  </a>
-                <a class = "btn-primary" href = "/showall"> Добавить группу  </a>
-                <a class = "btn btn-" href="javascript:formSubmit()"> Logout</a>
+            <div id="men">
+                <a class = "btn btn-danger" href="javascript:formSubmit()"> Logout</a>
 
             </div>
 
@@ -44,57 +40,85 @@
 
             <div class="side1">
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
-                    <li><a tabindex="-1" href="#">Для девушек</a></li>
-                    <li><a tabindex="-1" href="#">Для мужчин</a></li>
-                    <li><a tabindex="-1" href="#">Для детей </a></li>
+                    <li><a tabindex="-1" href="/pruductpp">Добавить товары</a></li>
+                    <li><a tabindex="-1" id="delete_product"  href="#">Удалить выбранные</a></li>
+                    <li><a tabindex="-1" href="/grouppp">Добавить группу </a></li>
+                    <li><a tabindex="-1" href="/showall">Список юзеров </a></li>
                     <li class="dropdown-submenu">
-                        <a tabindex="-1" href="#">Для праздника</a>
+                        <a tabindex="-1" href="#">Категории:</a>
                         <ul class="dropdown-menu">
                             <li><a tabindex="-1" href="#">День рождения</a></li>
                             <li><a tabindex="-1" href="#">Корпоратив</a></li>
                             <li><a tabindex="-1" href="#">Новый год</a></li>
                             <li><a tabindex="-1" href="#">Женский день</a></li>
                             <li><a tabindex="-1" href="#">Мужской день</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Для праздника</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">День рождения</a></li>
 
+                                    <li><a tabindex="-1" href="#">Новый год</a></li>
+
+
+                                </ul>
                         </ul>
-                    <li><a tabindex="-1" href="#">Праздничные акции</a></li>
-                    <li><a tabindex="-1" href="#"></a></li>
 
                 </ul>
+
             </div>
 
 
         </div>
         <div class="span9 text">
-            <h2  align ="center">Топ продаж</h2>
+            <h2  align ="center">Список юзеров</h2>
 
 
-
-
-
-
+            <div class="catalog">
 
 
                 <!----------------------------insert here ---------------------------------------->
-            <div class="catalog">
 
-                <table class="table table-striped">
+                <table class="table table-striped" id = "usertable"   >
                     <thead>
                     <tr>
                         <td><b>Name</b></td>
                     </tr>
                     </thead>
                     <c:forEach items="${users}" var = "users">
-                    <tr>
-                        <td>${users.username}</td>
+                        <tr>
+                            <td>${users.username}</td>
 
-                    </tr>
+                        </tr>
                     </c:forEach>
 
-                <!---------------------  end of main div--------------------------------------------------------->
+
                 </table>
 
+
+                <table class="table table-striped"   >
+                    <thead>
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td><b>amount</b></td>
+                    </tr>
+                    </thead>
+                    <c:forEach items="${orderlist}" var = "orders">
+                        <tr>
+
+                            <td>${orders.amount}</td>
+                        </tr>
+                    </c:forEach>
+
+
+                </table>
+
+
+                <!---------------------  end of main div--------------------------------------------------------->
+
+
             </div>
+
+
 
             <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
         </div>
@@ -137,11 +161,6 @@
                 <br>
                 Пн–Сб: 10:00-20:00, Вс: 10:00-19:00
 
-            </div>
-        </div>
-        <div class="logo">
-            <div class="logos">
-                <img src="logo.png" height="70px">
             </div>
         </div>
     </div>

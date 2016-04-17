@@ -33,10 +33,6 @@ public class User {
 
 	Set<Products> productsSet = new TreeSet<Products>();
 
-
-
-
-
 	public User() {
 	}
 
@@ -105,6 +101,26 @@ public class User {
 	}
 	public void setProductsSet(Set<Products> productsList) {
 		this.productsSet = productsList;
+	}
+
+	public Integer getAmount(Set<Products> set){
+		Integer amount = 0;
+		for (Products products : set) {
+			amount+= Integer.parseInt(products.getPrice());
+		}
+		return amount;
+	}
+
+	public String getProductsDescription(){
+		String result = "";
+		for (Products products : productsSet) {
+			result += products.getDescription() + ", ";
+		}
+		return result;
+	}
+
+	public void clearSet(){
+		this.productsSet.clear();
 	}
 
 }

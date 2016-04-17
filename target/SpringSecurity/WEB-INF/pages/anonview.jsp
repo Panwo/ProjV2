@@ -7,8 +7,8 @@
 
     <link href="/style/style.css" rel="stylesheet" type="text/css" >
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
-    <script src="js/jquery-1.11.1.min.js">
-    </script>
+    <script src=" http://code.jquery.com/jquery-latest.min.js"></script>
+
     <meta charset ="urf-8">
     <title>anon</title>
 </head>
@@ -25,9 +25,9 @@
             </div>
 
             <div id="men"> <a class="btn btn-primary"  href="/">Главная</a>
-                <a class="btn btn-primary" href="/dostavka">Доcтавка</a>
-                <a class="btn btn-primary" href="/">Контакты</a>
-                <a class = "btn btn-" href="/login"> Вход/Регистрация</a>
+                <a class="btn btn-primary" href="/dostavka">Топ</a>
+                <a class="btn btn-primary" href="/">Доставка</a>
+                <a class = "btn btn-success" href="/login"> Вход/Регистрация</a>
 
             </div>
 
@@ -59,23 +59,38 @@
 
             <h2  align ="center"> Товары из категории: ${cat.category_name}</h2>
 
-
             <div class="catalog">
-
-
                 <!----------------------------insert here ---------------------------------------->
-
                 <c:forEach items="${products}" var = "products">
                     <div class="products-main">
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
                             <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
                             <p class="price">${products.price}<span> грн  </span>
+
+                               <div class="rows">
+                                    <div class="row">
+                                    <button class="open">Купить</button>
+                                    <form id="myform" action="/" method="post">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Name</label>
+                                            <input type="ema"  name ="name" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Phone</label>
+                                            <input type="password" name = "phone" >
+                                        </div>
+
+                                        <button  class="ave" >Закрыть</button>
+                                        <INPUT type="submit" id = "submit" class = "close" value="Заказать">
+
+                                    </form>
+                                </div>
+                            </div>
+
                         </div>
                         <p class="bot-dot"></p>
                     </div>
-
-
                 </c:forEach>
                 <!---------------------  end of main div--------------------------------------------------------->
 
@@ -87,16 +102,11 @@
             <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
         </div>
 
-
-
-
     </div>
 
     <div id = "footer">
 
         <div class="fam"> Парамонов Владимир
-
-
         </div>
 
         <script type="text/javascript">(function() {
@@ -109,7 +119,6 @@
                 h.appendChild(s);
             }})();</script>
         <div class="pluso" data-background="none;" data-options="medium,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="vkontakte,facebook,google,email"></div>
-
         <div class="adressa">
             <a class="c__w_y" href="/content/7-contacts/"     rel="nofollow">Ждём Вас по адресу</a>
             <div class  = "blockkon">
@@ -126,15 +135,39 @@
 
             </div>
         </div>
-        <div class="logo">
-            <div class="logos">
-                <img src="logo.png" height="70px">
-            </div>
-        </div>
+
     </div>
 
 
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+             $(function() {
+                $('.row').on('click', '.open', function() {
+                            $('.row form').hide();
+                            $(this).parent().children('form').show(); });
+                $('.row').on('click', '.close',
+                        function(e) {
+                            e.preventDefault();
+                            $(this).closest('.row').find('.open').html('Куплено!');
+                            $(this).closest('.row').find('.open').attr('disabled', true);
+                            $(this).parent('form').html('Мы вам перезвоним!!!').delay(2000).toggle(500);
+                              var name =
+
+                        });
+                $('.row').on('click',
+                        '.ave',
+                        function(e) {
+                            e.preventDefault();
+                            $(this).parent('form').hide();
+                            $(this).closest('.row').find('.open').prop('disabled', false);
+                        });
+            });
+    });
+</script>
+
+
 
 </body>
 

@@ -25,7 +25,9 @@
  <a class="btn btn-primary"  href="html.html">Главная</a>
     <a class="btn btn-primary" href="/top/7">Топ</a>
      <a class="btn btn-primary" href="/contacts">Контакты</a>
-     <a class="btn btn-primary" href="/login">Вход/регистрация</a>
+
+
+     <a class="btn btn-success" href="/login">Вход/регистрация</a>
 
   <div id="bar">
 
@@ -145,11 +147,7 @@
                 
             </div>    
         </div>
-           <div class="logo">
-               <div class="logos">
-                   <img src="logo.png" height="70px">
-               </div>
-           </div>
+
     </div> 
 
 </div>

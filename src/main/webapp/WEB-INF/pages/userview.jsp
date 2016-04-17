@@ -74,7 +74,7 @@
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
                             <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
-                            <p class="price">${products.price}<span> грн</span>
+                            <p class="price2">${products.price}<span> грн</span>
                         </div>
                         <p class="bot-dot"></p>
                     </div>

@@ -1,9 +1,6 @@
 package com.vdp.web.controller;
 
-import com.vdp.users.model.Category;
-import com.vdp.users.model.Products;
-import com.vdp.users.model.User;
-import com.vdp.users.model.UserRole;
+import com.vdp.users.model.*;
 import com.vdp.users.service.MyService;
 import com.vdp.users.service.UserHelp;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +40,14 @@ public class MainController   {
 		return model;
 	}
 
+	@RequestMapping(value =  "/indexforuser")
+	public ModelAndView defaultforUser() {
+		ModelAndView model = new ModelAndView();
+		model.setViewName("indexforuser");
+		return model;
+	}
+
+
 	@RequestMapping(value = "/spread")
 	public String makeSpread(){
 		User user = myService.findUserByUsername(UserHelp.getUserr());
@@ -52,7 +57,7 @@ public class MainController   {
 		}
 
 		if (roles.get(0).getRole().equals("ROLE_USER")) {
-			return "index";
+			return "indexforuser";
 		}
 		else return "redirect:/admin";
 
@@ -66,7 +71,7 @@ public class MainController   {
 
 	//---------------------------------------------------------------------
 
-//----REGISTRATION--------------------------------------------------------
+	//----REGISTRATION--------------------------------------------------------
 	@RequestMapping(value = "/formreg")
 	public String reg(Model model)
 	{
@@ -93,8 +98,54 @@ public class MainController   {
 	}
 //-------------------------------------------------------------------------------
 
+//заглушки -----------------------------------------------------
 
-// ---------------USER PART-------------------------------------------
+
+	@RequestMapping(value = "/addorder")
+	public ModelAndView addOrder(){
+		ModelAndView modelAndView = new ModelAndView();
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		if (auth instanceof AnonymousAuthenticationToken){
+			// Orders orders = new Orders("555", 5, "ano");
+			//	myService.addOrder(orders);
+		}else{
+			User user = myService.findUserByUsername(UserHelp.getUserr());
+			//  Orders order = new Orders(produc.amount, product.description, user);
+		}
+
+
+		modelAndView.setViewName("index");
+		return modelAndView;
+	}
+
+
+	//оформить заказ
+    @RequestMapping(value = "/buy")
+	public ModelAndView buyProducts(){
+		ModelAndView modelAndView = new ModelAndView();
+           User user = myService.findUserByUsername(UserHelp.getUserr());
+		Orders order = new Orders(user.getAmount(user.getProductsSet()), user.getUsername(), user.getProductsSet().toString());
+     		user.clearSet();
+		myService.addOrder(order);
+		  myService.updateUser(user);
+
+		modelAndView.setViewName("/indexforuser");
+		return modelAndView;
+	}
+
+		@RequestMapping(value = "/showoredrs")
+	public ModelAndView showOrders(){
+		ModelAndView modelAndView = new ModelAndView();
+          modelAndView.addObject("orderlist", myService.viewAllOrders());
+		modelAndView.setViewName("adminmy2");
+     return modelAndView;
+	}
+
+	//конец заглушек-------------------------------------------------
+
+
+
+	// ---------------USER PART-------------------------------------------
 	@RequestMapping(value = "/addtobasket")
 	public ModelAndView addToBacket(
 			@RequestParam(value = "toAdd[]", required = false)  long [] toAdd)
@@ -119,7 +170,7 @@ public class MainController   {
 	}
 
 
-    // переброс на корзину
+	// переброс на корзину
 	@RequestMapping(value = "/basket")
 	public  ModelAndView basket(){
 		ModelAndView modelAndView = new ModelAndView();
@@ -128,6 +179,7 @@ public class MainController   {
 		User user = myService.findUserByUsername(userDetail.getUsername());
 		modelAndView.setViewName("basket");
 		modelAndView.addObject("products", user.getProductsSet());
+		modelAndView.addObject("priceAll", user.getAmount(user.getProductsSet()));
 		return modelAndView;
 	}
 
@@ -146,8 +198,8 @@ public class MainController   {
 	@RequestMapping(value = "/showall")
 	public ModelAndView showAll(){
 		ModelAndView modelAndView = new ModelAndView();
-           modelAndView.addObject("users", myService.allUsers());
-                 modelAndView.setViewName("adminmy2");
+		modelAndView.addObject("users", myService.allUsers());
+		modelAndView.setViewName("adminmy2");
 		return modelAndView;
 	}
 
@@ -156,7 +208,7 @@ public class MainController   {
 	public String deleteFromBasket(@RequestParam(value = "Delete[]", required = false) long [] Delete, Model model)
 	{
 
-	   List<Products> toDelete = myService.findManyProducts(Delete);
+		List<Products> toDelete = myService.findManyProducts(Delete);
 
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		UserDetails userDetail = (UserDetails) auth.getPrincipal();
@@ -171,7 +223,7 @@ public class MainController   {
 		return "index";
 	}
 
- // ------------------- END OF USER PART--------------------------------------
+	// ------------------- END OF USER PART--------------------------------------
 
 	// -------------------ADMIN PART  ---------------------------------------
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
@@ -192,12 +244,12 @@ public class MainController   {
 	}
 
 	@RequestMapping(value = "/grouppp")
-		public ModelAndView groupPp(){
-			ModelAndView modelAndView = new ModelAndView();
+	public ModelAndView groupPp(){
+		ModelAndView modelAndView = new ModelAndView();
 
-			modelAndView.addObject("categories", myService.listGroups());
-			modelAndView.setViewName("addgroup");
-			return modelAndView;
+		modelAndView.addObject("categories", myService.listGroups());
+		modelAndView.setViewName("addgroup");
+		return modelAndView;
 	}
 
 
@@ -205,11 +257,11 @@ public class MainController   {
 	public ModelAndView delproduct(@RequestParam(value = "toDelete[]", required = false) long [] toDelete)
 	{
 		ModelAndView modelAndView = new ModelAndView();
-           if (toDelete != null) {
-			   myService.deleteManyProducts(toDelete);
-			   modelAndView.addObject("products", myService.displayProducts());
-			   modelAndView.setViewName("adminmy");
-		   }else modelAndView.setViewName("index");
+		if (toDelete != null) {
+			myService.deleteManyProducts(toDelete);
+			modelAndView.addObject("products", myService.displayProducts());
+			modelAndView.setViewName("adminmy");
+		}else modelAndView.setViewName("index");
 
 		return modelAndView;
 	}
@@ -217,11 +269,11 @@ public class MainController   {
 
 	@RequestMapping(value = "/addproduct", method = RequestMethod.POST)
 	public String addproduct(@RequestParam (value = "category") long categoryID,
-								   @RequestParam String description,
-								   @RequestParam String price,
-								   @RequestParam(value="photo") MultipartFile photo,
-								   Model model
-								       ) throws IOException {
+							 @RequestParam String description,
+							 @RequestParam String price,
+							 @RequestParam(value="photo") MultipartFile photo,
+							 Model model
+	) throws IOException {
 
 
 		Category category = myService.find(categoryID);
