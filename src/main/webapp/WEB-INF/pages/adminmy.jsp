@@ -44,7 +44,7 @@
                     <li><a tabindex="-1" id="delete_product"  href="#">Удалить выбранные</a></li>
                     <li><a tabindex="-1" href="/grouppp">Добавить группу </a></li>
                     <li><a tabindex="-1" href="/showall">Список юзеров </a></li>
-                    <li><a tabindex="-1" href="/showorders">Список Заказов </a></li>
+                    <li><a tabindex="-1" href="/showoredrs">Список Заказов </a></li>
                     <li class="dropdown-submenu">
                         <a tabindex="-1" href="#">Категории:</a>
                         <ul class="dropdown-menu">

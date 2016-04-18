@@ -95,17 +95,20 @@
                 </table>
 
 
-                <table class="table table-striped"   >
+                <table class="table table-striped"  id = "ordertable">
                     <thead>
                     <tr>
                         <td><b>Name</b></td>
                         <td><b>amount</b></td>
+                        <td><b>description</b></td>
                     </tr>
                     </thead>
                     <c:forEach items="${orderlist}" var = "orders">
                         <tr>
-
+                            <td>${orders.name}</td>
                             <td>${orders.amount}</td>
+                            <td>${orders.list}</td>
+
                         </tr>
                     </c:forEach>
 

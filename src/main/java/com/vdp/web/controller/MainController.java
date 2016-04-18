@@ -124,10 +124,10 @@ public class MainController   {
 	public ModelAndView buyProducts(){
 		ModelAndView modelAndView = new ModelAndView();
            User user = myService.findUserByUsername(UserHelp.getUserr());
-		Orders order = new Orders(user.getAmount(user.getProductsSet()), user.getUsername(), user.getProductsSet().toString());
+		Orders order = new Orders(user.getAmount(user.getProductsSet()), user.getUsername(), user.getProductsDescription());
      		user.clearSet();
-		myService.addOrder(order);
-		  myService.updateUser(user);
+		   myService.addOrder(order);
+		   myService.updateUser(user);
 
 		modelAndView.setViewName("/indexforuser");
 		return modelAndView;

@@ -329,5 +329,9 @@ h4 {
 
 #usertable
 {
-    width: 500px;
+    width: 600px;
+}
+
+#ordertable{
+    width: 600px;
 }

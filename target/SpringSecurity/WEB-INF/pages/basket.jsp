@@ -62,9 +62,6 @@
             </div>
             <div class="span8 text">
 
-                <h2  align ="center"> Товары из категории: ${cat.category_name}</h2>
-
-
                 <div class="catalog">
 
                     <!----------------------------insert here ---------------------------------------->
@@ -88,7 +85,7 @@
 
                 </div>
                  <h1> Товаров на сумму:${priceAll} грн</h1>
-                <a class="btn btn-primary" id = 'gogo' href="/" >Оформить заказ</a>
+                <a class="btn btn-primary" id = 'gogo' href="/buy" >Оформить заказ</a>
                 <a class="btn btn-primary" id = 'remove' >Добавить в корзину</a>
 
 

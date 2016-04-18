@@ -7,7 +7,7 @@
     <link href="/style/style.css" rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="/style/formstyle.css" />
 
-<script>
+    <!----<script>
 
     d= document;
     function validate_form ( )
@@ -65,14 +65,14 @@ if (valid == false){
         
 
 
-</SCRIPT>
+</SCRIPT> --->
 
 </HEAD>
 <BODY>
     
     <div id = backs>
 <div id = form>
-<FORM name="contact_form" method="post" <%--action="/adduser"--%> onsubmit="return validate_form (); ">
+<FORM name="contact_form" method="post" action="/adduser" onsubmit="return validate_form (); ">
 
 <H2>Пожалуйста введите ваши данные.</H2>
     <br>
