@@ -107,14 +107,12 @@ if (valid == false){
                     <br>
                     <INPUT type="text" name="phone">
                         </br>
-                        <br>
-                    Ваш пол: 
-                        </br>
-                    <br>
-<INPUT type="radio" name="gender" value="1"> Мужской
-<INPUT type="radio" name="gender" value="0"> Женский</br>
- 
-
+    <br>
+    Ваше имя:
+    </br>
+    <br>
+    <INPUT type="text" name="name">
+    </br>
 
 </P><P><INPUT type="submit" name="send" value="Отправить данные"></P>
 

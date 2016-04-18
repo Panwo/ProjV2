@@ -5,7 +5,7 @@ import java.util.*;
 
 @Entity
 @Table(name = "users")
-public class User {
+public class User implements Comparable {
 
 	@Id
 	@Column(name = "username", unique = true, nullable = false, length = 45)
@@ -18,8 +18,8 @@ public class User {
 	private String email;
 	@Column(name = "phone")
 	private String phone;
-	@Column(name = "male")
-	private Integer male;
+	@Column(name = "name")
+	private  String name;
 
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "user", cascade=CascadeType.ALL)
 	private Set<UserRole> userRole = new HashSet<UserRole>(0);
@@ -42,13 +42,13 @@ public class User {
 		this.enabled = enabled;
 	}
 
-	public User(String username, String password, boolean enabled, String email, String phone, Integer male) {
+	public User(String username, String password, boolean enabled, String email, String phone, String name) {
 		this.username = username;
 		this.password = password;
 		this.enabled = enabled;
 		this.email = email;
 		this.phone = phone;
-		this.male = male;
+		this.name = name;
 	}
 
 	public User(String username, String password, boolean enabled, Set<UserRole> userRole) {
@@ -122,5 +122,7 @@ public class User {
 	public void clearSet(){
 		this.productsSet.clear();
 	}
+
+	
 
 }

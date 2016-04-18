@@ -85,12 +85,12 @@ public class MainController   {
 			@RequestParam(value = "mail") String email,
 			@RequestParam(value = "password") String password,
 			@RequestParam (value = "phone") String phone,
-			@RequestParam (value = "gender") Integer male
+			@RequestParam (value = "name") String name
 	){
 
 		password = passwordEncoder.encode(password);
 		ModelAndView modelAndView = new ModelAndView();
-		User user = new User(login, password, true, email, phone, male );
+		User user = new User(login, password, true, email, phone, name );
 		UserRole role = new UserRole(user, "ROLE_USER");
 		myService.RegisterUser(user, role);
 		modelAndView.setViewName("login");
