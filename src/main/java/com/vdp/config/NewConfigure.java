@@ -14,6 +14,8 @@ public class NewConfigure extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/style/**").addResourceLocations("/WEB-INF/style/");
         registry.addResourceHandler("/img/**").addResourceLocations("/WEB-INF/img/");
           registry.addResourceHandler("/bdimages/**").addResourceLocations("/WEB-INF/dbimages/");
+        registry.addResourceHandler("/libs/**").addResourceLocations("/WEB-INF/libs/");
+
     }
 }
 

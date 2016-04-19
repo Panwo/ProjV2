@@ -22,9 +22,9 @@
            </div>
            
  <div id="men">
- <a class="btn btn-primary"  href="html.html">Главная</a>
+ <a class="btn btn-primary"  href="/">Главная</a>
     <a class="btn btn-primary" href="/top/7">Топ</a>
-     <a class="btn btn-primary" href="/contacts">Контакты</a>
+     <a class="btn btn-primary" href="/basket">Корзина</a>
 
 
      <a class="btn btn-success" href="/login">Вход/регистрация</a>
@@ -69,7 +69,8 @@
           
           <div class="side1">
               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
-          <li><a tabindex="-1" href="/top/1">Для девушек</a></li>
+                  <li><a tabindex="-1" href="/top/7">Топ продаж</a></li>
+                  <li><a tabindex="-1" href="/top/1">Для девушек</a></li>
             <li><a tabindex="-1" href="/top/2">Для мужчин</a></li>
              <li><a tabindex="-1" href="/top/3">Для детей </a></li>
              <li class="dropdown-submenu">

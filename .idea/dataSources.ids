@@ -70,7 +70,7 @@ category_id</columns>
         <data-type>varchar(45)</data-type>
       </column>
       <column id="22" parent="4" name="list">
-        <data-type>varchar(45)</data-type>
+        <data-type>varchar(500)</data-type>
       </column>
       <key id="23" parent="4" name="PRIMARY">
         <columns>id</columns>
@@ -160,10 +160,8 @@ username</columns>
       <column id="43" parent="7" name="phone">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="44" parent="7" name="male">
-        <mandatory>1</mandatory>
-        <data-type>tinyint(4)</data-type>
-        <default-expression>&apos;1&apos;</default-expression>
+      <column id="44" parent="7" name="name">
+        <data-type>varchar(30)</data-type>
       </column>
       <column id="45" parent="7" name="orders_id">
         <mandatory>1</mandatory>

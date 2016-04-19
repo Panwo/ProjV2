@@ -1,5 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
 <html>
 <head>
 
@@ -7,7 +9,12 @@
 
     <link href="/style/style.css" rel="stylesheet" type="text/css" >
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
-    <script src=" http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+    <link rel="stylesheet" href="/libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link href="/style/add.css" rel="stylesheet" type="text/css" >
+
+
     <meta charset ="urf-8">
     <title>user page</title>
 </head>
@@ -24,11 +31,14 @@
             </div>
 
             <div id="men"> <a class="btn btn-primary"  href="/">Главная</a>
-                <a class="btn btn-primary"  >Доcтавка</a>
+                <a class="btn btn-primary" href="/contacts" >Как купить</a>
                 <a class="btn btn-primary" href="/basket">Корзина</a>
+
                 <div id = "userr">
                     Привет,  ${pageContext.request.userPrincipal.name}
                 </div>
+
+
                 <a class = "btn btn-" href="/logout"> Logout</a>
 
             </div>
@@ -42,7 +52,7 @@
             <div class="side1">
 
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
-
+                    <li><a tabindex="-1" href="/top/7">Топ продаж</a></li>
                     <li><a tabindex="-1" href="/top/1">Для девушек</a></li>
                     <li><a tabindex="-1" href="/top/2">Для мужчин</a></li>
                     <li><a tabindex="-1" href="/top/3">Для детей </a></li>
@@ -71,16 +81,23 @@
                 <c:forEach items="${products}" var = "products">
                     <div class="products-main">
                         <input type="checkbox" name="toAdd[]" value="${products.id}" id="checkbox_${products.id}"/>
+                        <a class="cart" >
+                            <img class="normal" src="/img/shopping-cart.png"/>
+                            <img class="hover" src="/img/shopping-cart-hover.png"/>
+
+                        </a>
+                        <div class="text-bottom">Добавить в корзину</div>
                         <div class="product">
-                            <h2><a href = "#">${products.description}</a></h2>
-                            <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
+
+                            <label for="item"><h2><a href = "">${products.description}</a></h2></label><input id="item" name="test" value="${products.id}" type="text">
+                            <div class="product-img"><a href = "#"> <img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
                             <p class="price2">${products.price}<span> грн</span>
                         </div>
                         <p class="bot-dot"></p>
+                        <i class="fa fa-check-circle ok" aria-hidden="true"></i>
                     </div>
-
-
                 </c:forEach>
+
                 <!---------------------  end of main div--------------------------------------------------------->
 
 
@@ -144,24 +161,13 @@
 
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#send').click(function () {
-                    alert("dsa");
-            var data2 = {'toAdd[]': []};
-                    $(":checked").each(function () {
-                        data2['toAdd[]'].push($(this).val());
-                    });
-            $.post("/addtobasket", data2);
-
-                }
-        );
-    });
 
 
 
-</script>
 
+
+<script src=" /js/jquery-1.11.1.min.js"></script>
+<script src="/js/common.js"></script>
 </body>
 
 </html>

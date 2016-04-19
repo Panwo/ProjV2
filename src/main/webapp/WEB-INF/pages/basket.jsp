@@ -45,6 +45,7 @@
                 <div class="side1">
 
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
+                        <li><a tabindex="-1" href="/top/7">Топ продаж</a></li>
                         <li><a tabindex="-1" href="/top/1">Для девушек</a></li>
                         <li><a tabindex="-1" href="/top/2">Для мужчин</a></li>
                         <li><a tabindex="-1" href="/top/3">Для детей </a></li>
@@ -84,9 +85,13 @@
 
 
                 </div>
-                 <h1> Товаров на сумму:${priceAll} грн</h1>
+                   <c:if test="${ priceAll ne '0'}">   <h1> Товаров на сумму:${priceAll} грн</h1>
+                   </c:if>
+
+
+
                 <a class="btn btn-primary" id = 'gogo' href="/buy" >Оформить заказ</a>
-                <a class="btn btn-primary" id = 'remove' >Добавить в корзину</a>
+                <a class="btn btn-primary" id = 'remove' >Удалить выбранные</a>
 
 
                 <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>

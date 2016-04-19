@@ -5,7 +5,7 @@ import java.util.*;
 
 @Entity
 @Table(name = "users")
-public class User implements Comparable {
+public class User {
 
 	@Id
 	@Column(name = "username", unique = true, nullable = false, length = 45)
@@ -61,6 +61,14 @@ public class User implements Comparable {
 		return this.username;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public void setUsername(String username) {
 		this.username = username;
 	}
@@ -103,6 +111,22 @@ public class User implements Comparable {
 		this.productsSet = productsList;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
 	public Integer getAmount(Set<Products> set){
 		Integer amount = 0;
 		for (Products products : set) {
@@ -123,6 +147,5 @@ public class User implements Comparable {
 		this.productsSet.clear();
 	}
 
-	
 
 }

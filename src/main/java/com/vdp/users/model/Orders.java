@@ -1,6 +1,9 @@
 package com.vdp.users.model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "orders")
@@ -20,17 +23,20 @@ public class Orders {
     @Column(name= "list")
     private String list;
 
+    @Column(name ="phone")
+    private String phone;
+
     public Orders() {}
 
     public Orders(Integer amount) {
         this.amount = amount;
-
     }
 
-    public Orders(Integer amount, String name, String list) {
+    public Orders(Integer amount, String name, String list ,String phone) {
         this.amount = amount;
         this.name = name;
         this.list = list;
+        this.phone = phone;
     }
 
     public long getId() {
@@ -63,5 +69,13 @@ public class Orders {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

@@ -15,5 +15,4 @@ public interface ProductsDAO {
     byte[] getImage(long id );
     Products findOne(long id);
 
-
 }

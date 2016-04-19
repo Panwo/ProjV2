@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
     <link rel ="stylesheet" href = "/style/style.css">
+    <link rel ="stylesheet" href = "/style/reveal.css">
+    <link rel ="stylesheet" href = "/style/form-open.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script src=" /js/jquery-1.4.4.min.js"></script>
+    <script src=" /js/jquery.reveal.js"></script>
+    <script src=" /js/common.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -40,10 +46,12 @@
 
             <div class="side1">
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
-                    <li><a tabindex="-1" href="/pruductpp">Добавить товары</a></li>
+                    <li><a tabindex="-1" href="/admin" >Все товары</a></li>
+                    <li><a tabindex="-1" href="/pruductpp" data-reveal-id="myModal1">Добавить товары</a></li>
                     <li><a tabindex="-1" id="delete_product"  href="#">Удалить выбранные</a></li>
-                    <li><a tabindex="-1" href="/grouppp">Добавить группу </a></li>
+                    <li><a tabindex="-1" href="/grouppp" data-reveal-id="myModal">Добавить группу </a></li>
                     <li><a tabindex="-1" href="/showall">Список юзеров </a></li>
+                    <li><a tabindex="-1" href="/showorders">Список заказов </a></li>
                     <li class="dropdown-submenu">
                         <a tabindex="-1" href="#">Категории:</a>
                         <ul class="dropdown-menu">
@@ -70,7 +78,9 @@
 
         </div>
         <div class="span9 text">
-            <h2  align ="center">Список юзеров</h2>
+
+
+
 
 
             <div class="catalog">
@@ -78,6 +88,9 @@
 
                 <!----------------------------insert here ---------------------------------------->
 
+
+                <c:if test="${not empty users}">
+                    <h2  align ="center">Список юзеров</h2>
                 <table class="table table-striped" id = "usertable"   >
                     <thead>
                     <tr>
@@ -93,27 +106,108 @@
 
 
                 </table>
+                </c:if>
 
-
+                <c:if test="${not empty orderlist}">
+                    <h2  align ="center">Список заказов</h2>
                 <table class="table table-striped"  id = "ordertable">
                     <thead>
                     <tr>
-                        <td><b>Name</b></td>
-                        <td><b>amount</b></td>
-                        <td><b>description</b></td>
+                        <td><b>Имя </b></td>
+                        <td><b>Телефон</b></td>
+                        <td><b>Товары</b></td>
+                        <td><b>Стоимость</b></td>
                     </tr>
                     </thead>
                     <c:forEach items="${orderlist}" var = "orders">
-                        <tr>
-                            <td>${orders.name}</td>
-                            <td>${orders.amount}</td>
-                            <td>${orders.list}</td>
+                    <tr>
+                        <td>${orders.name}</td>
+                        <td>${orders.phone}</td>
 
-                        </tr>
+                        <td>
+                            <textarea rows="3">${orders.list}</textarea>
+                        </td>
+                        <td>${orders.amount}</td>
+                    </tr>
                     </c:forEach>
-
-
                 </table>
+</c:if>
+
+
+                <div id="myModal" class="form-open reveal-modal">
+                    <div id = "backs">
+
+                        <br>
+                        Существующие категории:
+                        </br>
+                        <select name = "category">
+                            <c:forEach items="${categories}" var="category">
+                                <option value="${category.id}">${category.category_name}</option>
+                            </c:forEach>
+                        </select>
+                        <br>
+                        <div id = "form">
+
+                            <FORM name="contact_form"   action="/addgroup" method="post" >
+
+                                <H2>Добавить продукт в базу данных</H2>
+
+                                Имя категории:
+                                </br>
+
+                                <INPUT type="text" name="category_name">
+
+                                <P><INPUT type="submit"  value="Добавить категорию!"></P>
+
+                            </FORM>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="myModal1" class="form-open reveal-modal">
+                    <div id = "backs">
+                        <div id = "form">
+
+                            <FORM name="contact_form"  enctype="multipart/form-data" action="/addproduct"  method="post" >
+
+                                <H2>Добавить продукт в базу данных</H2>
+                                <br>
+                                Категория:
+                                </br>
+                                <select name = "category">
+                                    <c:forEach items="${categories}" var="category">
+                                        <option value="${category.id}">${category.category_name}</option>
+                                    </c:forEach>
+                                </select>
+                                <br>
+                                Описание:
+                                </br>
+                                <INPUT type="text" name="description">
+
+                                <P>
+                                    Цена
+                                </p>
+
+                                <INPUT type="text" name="price">
+                                <br>
+                                Изображение:
+                                </br>
+                                <input type="file" name="photo"  />
+
+                                </br>
+                                <P><INPUT type="submit"  value="Добавить товар!"></P>
+
+                            </FORM>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
 
 
                 <!---------------------  end of main div--------------------------------------------------------->

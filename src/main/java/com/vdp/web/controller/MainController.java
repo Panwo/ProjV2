@@ -69,6 +69,12 @@ public class MainController   {
 		return "userview";
 	}
 
+
+	@RequestMapping("/contacts")
+	public String contacts ( Model model) {
+		return "contacts";
+	}
+
 	//---------------------------------------------------------------------
 
 	//----REGISTRATION--------------------------------------------------------
@@ -124,7 +130,7 @@ public class MainController   {
 	public ModelAndView buyProducts(){
 		ModelAndView modelAndView = new ModelAndView();
            User user = myService.findUserByUsername(UserHelp.getUserr());
-		Orders order = new Orders(user.getAmount(user.getProductsSet()), user.getUsername(), user.getProductsDescription());
+		Orders order = new Orders(user.getAmount(user.getProductsSet()), user.getName(), user.getProductsDescription(), user.getPhone());
      		user.clearSet();
 		   myService.addOrder(order);
 		   myService.updateUser(user);
@@ -133,41 +139,71 @@ public class MainController   {
 		return modelAndView;
 	}
 
-		@RequestMapping(value = "/showoredrs")
-	public ModelAndView showOrders(){
-		ModelAndView modelAndView = new ModelAndView();
-          modelAndView.addObject("orderlist", myService.viewAllOrders());
-		modelAndView.setViewName("adminmy2");
-     return modelAndView;
-	}
-
 	//конец заглушек-------------------------------------------------
 
 
 
 	// ---------------USER PART-------------------------------------------
+
+	// TODO: 18.04.2016 поменять под новый вид
 	@RequestMapping(value = "/addtobasket")
 	public ModelAndView addToBacket(
-			@RequestParam(value = "toAdd[]", required = false)  long [] toAdd)
+			@RequestParam(value = "toAdd[]", required = false)  long[] toAdd)
 	{
-
 		ModelAndView modelAndView = new ModelAndView();
-		if (toAdd!= null) {
+		if (toAdd!=null) {
 			User user = myService.findUserByUsername(UserHelp.getUserr());
-
 			List<Products> productsList;
-
 			productsList = myService.findManyProducts(toAdd);
-
 			user.setProductsSetAddall(productsList);
 			myService.updateUser(user);
-
 			modelAndView.setViewName("basket");
 
 		} else modelAndView.setViewName("index");
 
 		return modelAndView;
 	}
+     //new test
+	@RequestMapping(value = "/addtobasketnew")
+	public ModelAndView addToBacketnew(
+			@RequestParam(value = "test")
+			long id                         )
+	{
+		ModelAndView modelAndView = new ModelAndView();
+
+			User user = myService.findUserByUsername(UserHelp.getUserr());
+			Products product;
+			product = myService.getOneProduct(id);
+		List<Products> productList = new ArrayList<Products>();
+		productList.add(product);
+			user.setProductsSetAddall(productList);
+			myService.updateUser(user);
+			modelAndView.setViewName("basket");
+
+		return modelAndView;
+	}
+
+	// TODO: 18.04.2016 удаление из корзины
+	@RequestMapping(value = "/remove")
+	public String deleteFromBasket(@RequestParam(value = "Delete[]", required = false) long [] Delete, Model model)
+	{
+
+		List<Products> toDelete = myService.findManyProducts(Delete);
+
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		UserDetails userDetail = (UserDetails) auth.getPrincipal();
+
+		User user = myService.findUserByUsername(userDetail.getUsername());
+		Set<Products> test = new TreeSet<Products>( user.getProductsSet());
+		for (Products products : toDelete) {
+			test.remove(products);
+		}
+		user.setProductsSet(test);
+		myService.updateUser(user);
+		return "index";
+	}
+
+
 
 
 	// переброс на корзину
@@ -195,33 +231,9 @@ public class MainController   {
 		}
 	}
 
-	@RequestMapping(value = "/showall")
-	public ModelAndView showAll(){
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("users", myService.allUsers());
-		modelAndView.setViewName("adminmy2");
-		return modelAndView;
-	}
 
 
-	@RequestMapping(value = "/remove")
-	public String deleteFromBasket(@RequestParam(value = "Delete[]", required = false) long [] Delete, Model model)
-	{
 
-		List<Products> toDelete = myService.findManyProducts(Delete);
-
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		UserDetails userDetail = (UserDetails) auth.getPrincipal();
-
-		User user = myService.findUserByUsername(userDetail.getUsername());
-		Set<Products> test = new TreeSet<Products>( user.getProductsSet());
-		for (Products products : toDelete) {
-			test.remove(products);
-		}
-		user.setProductsSet(test);
-		myService.updateUser(user);
-		return "index";
-	}
 
 	// ------------------- END OF USER PART--------------------------------------
 
@@ -229,6 +241,7 @@ public class MainController   {
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public ModelAndView adminPage() {
 		ModelAndView model = new ModelAndView();
+		model.addObject("categories", myService.listGroups());
 		model.addObject("products", myService.displayProducts());
 		model.setViewName("adminmy");
 		return model;
@@ -240,6 +253,22 @@ public class MainController   {
 
 		modelAndView.addObject("categories", myService.listGroups());
 		modelAndView.setViewName("addproduct");
+		return modelAndView;
+	}
+
+	@RequestMapping(value = "/showall")
+	public ModelAndView showAll(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("users", myService.allUsers());
+		modelAndView.setViewName("adminmy2");
+		return modelAndView;
+	}
+
+	@RequestMapping(value = "/showorders")
+	public ModelAndView showOrders(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("orderlist", myService.viewAllOrders());
+		modelAndView.setViewName("adminmy2");
 		return modelAndView;
 	}
 

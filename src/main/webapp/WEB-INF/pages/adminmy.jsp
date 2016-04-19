@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
     <link rel ="stylesheet" href = "/style/style.css">
+    <link rel ="stylesheet" href = "/style/reveal.css">
+    <link rel ="stylesheet" href = "/style/form-open.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script src=" /js/jquery-1.4.4.min.js"></script>
+    <script src=" /js/jquery.reveal.js"></script>
+    <script src=" /js/common.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -28,7 +34,7 @@
             </div>
 
             <div id="men">
-                <a class = "btn btn-danger" href="javascript:formSubmit()"> Logout</a>
+                <a class = "btn btn-danger" href="/logout"> Logout</a>
 
             </div>
 
@@ -40,11 +46,12 @@
 
             <div class="side1">
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id = "smenu">
-                    <li><a tabindex="-1" href="/pruductpp">Добавить товары</a></li>
+                    <li><a tabindex="-1" href="/admin" >Все товары</a></li>
+                    <li><a tabindex="-1" href="/pruductpp" data-reveal-id="myModal1">Добавить товары</a></li>
                     <li><a tabindex="-1" id="delete_product"  href="#">Удалить выбранные</a></li>
-                    <li><a tabindex="-1" href="/grouppp">Добавить группу </a></li>
+                    <li><a tabindex="-1" href="/grouppp" data-reveal-id="myModal">Добавить группу </a></li>
                     <li><a tabindex="-1" href="/showall">Список юзеров </a></li>
-                    <li><a tabindex="-1" href="/showoredrs">Список Заказов </a></li>
+                    <li><a tabindex="-1" href="/showorders">Список заказов </a></li>
                     <li class="dropdown-submenu">
                         <a tabindex="-1" href="#">Категории:</a>
                         <ul class="dropdown-menu">
@@ -93,6 +100,82 @@
 
                 </c:forEach>
 
+                <div id="myModal" class="form-open reveal-modal">
+                    <div id = "backs">
+
+                        <br>
+                        Существующие категории:
+                        </br>
+                        <select name = "category">
+                            <c:forEach items="${categories}" var="category">
+                                <option value="${category.id}">${category.category_name}</option>
+                            </c:forEach>
+                        </select>
+                        <br>
+                        <div id = "form">
+
+                            <FORM name="contact_form"   action="/addgroup" method="post" >
+
+                                <H2>Добавить продукт в базу данных</H2>
+
+                                Имя категории:
+                                </br>
+
+                                <INPUT type="text" name="category_name">
+
+                                <P><INPUT type="submit"  value="Добавить категорию!"></P>
+
+                            </FORM>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="myModal1" class="form-open reveal-modal">
+                    <div id = "backs">
+                        <div id = "form">
+
+                            <FORM name="contact_form"  enctype="multipart/form-data" action="/addproduct"  method="post" >
+
+                                <H2>Добавить продукт в базу данных</H2>
+                                <br>
+                                Категория:
+                                </br>
+                                <select name = "category">
+                                    <c:forEach items="${categories}" var="category">
+                                        <option value="${category.id}">${category.category_name}</option>
+                                    </c:forEach>
+                                </select>
+                                <br>
+                                Описание:
+                                </br>
+                                <INPUT type="text" name="description">
+
+                                <P>
+                                    Цена
+                                </p>
+
+                                <INPUT type="text" name="price">
+                                <br>
+                                Изображение:
+                                </br>
+                                <input type="file" name="photo"  />
+
+                                </br>
+                                <P><INPUT type="submit"  value="Добавить товар!"></P>
+
+                            </FORM>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
                 <!---------------------  end of main div--------------------------------------------------------->
 
 
@@ -100,7 +183,7 @@
 
 
 
-            <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
+            <!--<a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>-->
         </div>
 
 

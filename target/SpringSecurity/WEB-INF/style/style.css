@@ -21,6 +21,14 @@ img{
 
 }
 
+#ordertable{
+    width: 620px;
+}
+#usertable{
+    width: 620px;
+}
+
+
 .products-main{
     width: 200px;
     float: left;
@@ -83,12 +91,6 @@ img{
     margin: 20px;
 }
 
-.close{
-    margin-right: 60px;
-    margin-top: 5px;
-}
-
-
 
 body  {
     background: url(../img/retina_wood.png);
@@ -97,13 +99,20 @@ body  {
 
 
 #userr {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 160px;
     height: 60px;
     position: absolute;
     margin-left: 680px;
-    margin-top: -120px
+    margin-top: -50px
 }
-
+#userr2 {
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -150px
+}
 
 .wrt{
     padding-top: 20px;
@@ -128,7 +137,6 @@ body  {
 
 #backs{
     background-color: aliceblue;
-    margin-left: 200px;
     width: 960;
     height: 700;
     margin-top: 0;
@@ -327,11 +335,3 @@ h4 {
     width: 200px;
 }
 
-#usertable
-{
-    width: 600px;
-}
-
-#ordertable{
-    width: 600px;
-}

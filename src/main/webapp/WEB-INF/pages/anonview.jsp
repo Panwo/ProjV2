@@ -26,7 +26,10 @@
 
             <div id="men"> <a class="btn btn-primary"  href="/">Главная</a>
                 <a class="btn btn-primary" href="/dostavka">Топ</a>
-                <a class="btn btn-primary" href="/">Доставка</a>
+                <a class="btn btn-primary" href="/contacts">Как купить</a>
+                <div id = "userr2">
+                    Здравствуйте, войдите для расширенных возможностей
+                </div>
                 <a class = "btn btn-success" href="/login"> Вход/Регистрация</a>
 
             </div>
@@ -153,9 +156,9 @@
                             $(this).closest('.row').find('.open').html('Куплено!');
                             $(this).closest('.row').find('.open').attr('disabled', true);
                             $(this).parent('form').html('Мы вам перезвоним!!!').delay(2000).toggle(500);
-                              var name =
-
                         });
+
+
                 $('.row').on('click',
                         '.ave',
                         function(e) {

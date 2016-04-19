@@ -1,5 +1,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page session="true"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset ="urf-8">
+
+
 <html>
 <head>
 <title>Login Page</title>
@@ -34,12 +39,14 @@
 	border: 1px solid #000;
 }
 </style>
+	<link href="/style/style.css" rel="stylesheet" type="text/css" >
+	<link rel ="stylesheet" href = "/style/bootstrap.min.css">
 </head>
 <body onload='document.loginForm.username.focus();'>
 
 	<div id="login-box">
 
-		<h3>Login with Username and Password</h3>
+		<h3>Войти на сайт</h3>
 
 		<c:if test="${not empty error}">
 			<div class="error">${error}</div>
@@ -49,15 +56,15 @@
 			<div class="msg">${msg}</div>
 		</c:if>
 
-		<form name='loginForm' action="<c:url value='/login' />" method='POST'>
+		<form name='loginForm' class= "form-horizontal" action="<c:url value='/login' />" method='POST'>
 
 			<table>
 				<tr>
-					<td>User:</td>
+					<td>Логин</td>
 					<td><input type='text' name='username'></td>
 				</tr>
 				<tr>
-					<td>Password:</td>
+					<td>Пароль</td>
 					<td><input type='password' name='password' /></td>
 				</tr>
 				<tr>
@@ -65,7 +72,7 @@
 						value="submit" /></td>
 				</tr>
 
-				<a href="/formreg" id = "reg" > Reg</a>
+				<a href="/formreg" id = "reg" > Регистрация</a>
 			</table>
 
 			<input type="hidden" name="${_csrf.parameterName}"
