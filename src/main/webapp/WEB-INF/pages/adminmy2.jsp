@@ -117,8 +117,10 @@
                         <td><b>Телефон</b></td>
                         <td><b>Товары</b></td>
                         <td><b>Стоимость</b></td>
+                        <td><b>Время</b></td>
                     </tr>
                     </thead>
+
                     <c:forEach items="${orderlist}" var = "orders">
                     <tr>
                         <td>${orders.name}</td>
@@ -128,6 +130,7 @@
                             <textarea rows="3">${orders.list}</textarea>
                         </td>
                         <td>${orders.amount}</td>
+                        <td>${orders.creationtime}</td>
                     </tr>
                     </c:forEach>
                 </table>

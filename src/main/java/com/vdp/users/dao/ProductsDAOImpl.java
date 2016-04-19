@@ -42,7 +42,8 @@ public class ProductsDAOImpl implements  ProductsDAO  {
     public void deleteMany(long [] toDelete){
        Products product;
         for (long l : toDelete) {
-            product = entityManager.getReference(Products.class, l);
+            product = entityManager.find(Products.class, l);
+            product.clearcategory();
             entityManager.remove(product);
         }
     }

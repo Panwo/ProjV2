@@ -8,8 +8,11 @@
         <link href="/style/style.css" rel="stylesheet" type="text/css" >
         <link rel ="stylesheet" href = "/style/bootstrap.min.css">
 
-
+        <link rel ="stylesheet" href = "/style/remove.css">
         <script src=" http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <script src=" /js/close.js"></script>
+        <link rel="stylesheet" href="/libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 
         <meta charset ="urf-8">
         <title>user page</title>
@@ -69,22 +72,23 @@
 
                     <c:forEach items="${products}" var = "products">
                         <div class="products-main">
-                            <input type="checkbox" name="Delete[]" value="${products.id}" id="checkbox_${products.id}"/>
+                            <a href="#" class="close"><i class="fa fa-times"  aria-hidden="true"></i></a>
                             <div class="product">
-                                <h2><a href = "#">${products.description}</a></h2>
-                                <div class="product-img"><a href = "#"> <img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
+                                <label for="item-rem"><h2><a href = "#">${products.description}</a></h2></label><input id="item-rem" name="name" value="" type="text">
+                                <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
                                 <p class="price2">${products.price}<span> грн</span>
-
                             </div>
                             <p class="bot-dot"></p>
                         </div>
 
 
                     </c:forEach>
+
                     <!---------------------  end of main div--------------------------------------------------------->
 
+                     </div>
 
-                </div>
+
                    <c:if test="${ priceAll ne '0'}">   <h1> Товаров на сумму:${priceAll} грн</h1>
                    </c:if>
 
@@ -147,7 +151,7 @@
         </div>
 
 
-    </div>
+
 
     <script type="text/javascript">
         $(document).ready(function() {

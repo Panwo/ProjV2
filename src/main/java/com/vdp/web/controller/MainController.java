@@ -131,7 +131,8 @@ public class MainController   {
 		ModelAndView modelAndView = new ModelAndView();
            User user = myService.findUserByUsername(UserHelp.getUserr());
 		Orders order = new Orders(user.getAmount(user.getProductsSet()), user.getName(), user.getProductsDescription(), user.getPhone());
-     		user.clearSet();
+     	  order.SetcreationTime();
+		      user.clearSet();
 		   myService.addOrder(order);
 		   myService.updateUser(user);
 
@@ -179,7 +180,6 @@ public class MainController   {
 			user.setProductsSetAddall(productList);
 			myService.updateUser(user);
 			modelAndView.setViewName("basket");
-
 		return modelAndView;
 	}
 
@@ -260,6 +260,7 @@ public class MainController   {
 	public ModelAndView showAll(){
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("users", myService.allUsers());
+		modelAndView.addObject("categories", myService.listGroups());
 		modelAndView.setViewName("adminmy2");
 		return modelAndView;
 	}
@@ -268,6 +269,7 @@ public class MainController   {
 	public ModelAndView showOrders(){
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("orderlist", myService.viewAllOrders());
+		modelAndView.addObject("categories", myService.listGroups());
 		modelAndView.setViewName("adminmy2");
 		return modelAndView;
 	}
@@ -283,15 +285,18 @@ public class MainController   {
 
 
 	@RequestMapping(value = "/delproduct")
-	public ModelAndView delproduct(@RequestParam(value = "toDelete[]", required = false) long [] toDelete)
+	public ModelAndView delproduct(@RequestParam(value = "Delete[]") long [] Delete)
 	{
 		ModelAndView modelAndView = new ModelAndView();
-		if (toDelete != null) {
-			myService.deleteManyProducts(toDelete);
-			modelAndView.addObject("products", myService.displayProducts());
-			modelAndView.setViewName("adminmy");
-		}else modelAndView.setViewName("index");
+		int i = Delete.length;
+		Delete = Arrays.copyOf(Delete, i-2);
+		if (Delete != null) {
 
+
+			myService.deleteManyProducts(Delete);
+			modelAndView.addObject("products", myService.displayProducts());
+			modelAndView.setViewName("logout");
+		}else modelAndView.setViewName("index");
 		return modelAndView;
 	}
 
@@ -350,9 +355,14 @@ public class MainController   {
 			if (roles.get(0).getRole().equals("ROLE_USER")) {
 				Category category = myService.find(categoryId);
 				model.addObject("cat",category);
+
+
 				model.addObject("products", myService.listProducts(category));
 				model.addObject("categories", myService.listGroups());
 				model.setViewName("userview");
+
+
+
 			}
 		} else
 

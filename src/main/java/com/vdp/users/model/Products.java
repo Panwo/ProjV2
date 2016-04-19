@@ -97,4 +97,10 @@ public class Products implements Serializable , Comparable {
     public byte[] getImage() {
         return image;
     }
+
+    public void clearcategory(){
+        for (Category category : categories) {
+            categories.remove(category);
+        }
+    }
 }

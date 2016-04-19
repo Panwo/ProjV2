@@ -4,6 +4,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Entity
 @Table(name = "orders")
@@ -25,6 +27,9 @@ public class Orders {
 
     @Column(name ="phone")
     private String phone;
+
+    @Column(name = "creationtime")
+    String creationtime;
 
     public Orders() {}
 
@@ -77,5 +82,19 @@ public class Orders {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void SetcreationTime(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+      this.creationtime =   simpleDateFormat.format(new Date());
+    }
+
+
+    public String getCreationtime() {
+        return creationtime;
+    }
+
+    public void setCreationtime(String creationtime) {
+        this.creationtime = creationtime;
     }
 }

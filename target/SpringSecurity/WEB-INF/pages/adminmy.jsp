@@ -12,6 +12,7 @@
     <link rel ="stylesheet" href = "/style/form-open.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+
     <script src=" /js/jquery-1.4.4.min.js"></script>
     <script src=" /js/jquery.reveal.js"></script>
     <script src=" /js/common.js"></script>
@@ -88,7 +89,7 @@
                 <c:forEach items="${products}" var = "products">
 
                     <div class="products-main">
-                        <input type="checkbox" name="toDelete[]" value="${products.id}" id="checkbox_${products.id}"/>
+                        <input type="checkbox" name="Delete[]" value="${products.id}"/>
                         <div class="product">
                             <h2><a href = "#">${products.description}</a></h2>
                             <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="320" height="240" align="middle" /></a> </div>
@@ -177,12 +178,7 @@
 
 
                 <!---------------------  end of main div--------------------------------------------------------->
-
-
             </div>
-
-
-
             <!--<a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>-->
         </div>
 
@@ -233,22 +229,19 @@
 
 
 
-
-
 <script>
     $('#delete_product').click(function(){
-        var data = { 'toDelete[]' : []};
+        var data = { 'Delete[]' : []};
         $(":checked").each(function() {
-            data['toDelete[]'].push($(this).val());
+            data['Delete[]'].push($(this).val());
         });
-
+        alert('deleted!');
         $.post("/delproduct", data);
-        location.reload();
+
     })
 
-
-
 </script>
+
 </body>
 
 </html>

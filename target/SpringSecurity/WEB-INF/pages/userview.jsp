@@ -2,17 +2,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
-<html>
+<!DOCTYPE  html>
 <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <link href="/style/style.css" rel="stylesheet" type="text/css" >
     <link rel ="stylesheet" href = "/style/bootstrap.min.css">
 
 
+    <link rel ="stylesheet" href = "/style/add.css">
+    <script src=" /js/jquery-1.11.1.min.js"></script>
+    <script src=" /js/common.js"></script>
+
     <link rel="stylesheet" href="/libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-    <link href="/style/add.css" rel="stylesheet" type="text/css" >
 
 
     <meta charset ="urf-8">
@@ -73,6 +74,7 @@
             <h2  align ="center"> Товары из категории: ${cat.category_name}</h2>
 
 
+
             <div class="catalog">
 
 
@@ -80,23 +82,23 @@
 
                 <c:forEach items="${products}" var = "products">
                     <div class="products-main">
-                        <input type="checkbox" name="toAdd[]" value="${products.id}" id="checkbox_${products.id}"/>
-                        <a class="cart" >
+                        <input type="checkbox" name= " Delete[]" value="${products.id}" id="checkbox_${products.id}"/>
+                        <a class="cart" href="#">
                             <img class="normal" src="/img/shopping-cart.png"/>
                             <img class="hover" src="/img/shopping-cart-hover.png"/>
 
                         </a>
                         <div class="text-bottom">Добавить в корзину</div>
                         <div class="product">
-
-                            <label for="item"><h2><a href = "">${products.description}</a></h2></label><input id="item" name="test" value="${products.id}" type="text">
-                            <div class="product-img"><a href = "#"> <img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
+                            <label for="item"><h2><a href = "#">${products.description}</a></h2></label><input id="item" name="name" value="${products.id}" type="text">
+                            <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
                             <p class="price2">${products.price}<span> грн</span>
                         </div>
                         <p class="bot-dot"></p>
                         <i class="fa fa-check-circle ok" aria-hidden="true"></i>
                     </div>
                 </c:forEach>
+
 
                 <!---------------------  end of main div--------------------------------------------------------->
 
@@ -166,8 +168,7 @@
 
 
 
-<script src=" /js/jquery-1.11.1.min.js"></script>
-<script src="/js/common.js"></script>
+
 </body>
 
 </html>
