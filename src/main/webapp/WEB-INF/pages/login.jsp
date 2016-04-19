@@ -38,6 +38,8 @@
 	-moz-border-radius: 2px;
 	border: 1px solid #000;
 }
+
+
 </style>
 	<link href="/style/style.css" rel="stylesheet" type="text/css" >
 	<link rel ="stylesheet" href = "/style/bootstrap.min.css">
@@ -69,7 +71,7 @@
 				</tr>
 				<tr>
 					<td colspan='2'><input name="submit" type="submit"
-						value="submit" /></td>
+						value="Войти" /></td>
 				</tr>
 
 				<a href="/formreg" id = "reg" > Регистрация</a>

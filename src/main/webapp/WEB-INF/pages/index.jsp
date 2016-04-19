@@ -23,13 +23,28 @@
            
  <div id="men">
  <a class="btn btn-primary"  href="/">Главная</a>
+
     <a class="btn btn-primary" href="/top/7">Топ</a>
      <a class="btn btn-primary" href="/basket">Корзина</a>
 
 
-     <a class="btn btn-success" href="/login">Вход/регистрация</a>
+     <c:choose>
+         <c:when test="${pageContext.request.userPrincipal.name != null}">
+             <div id = "userr">
+                 Привет,  ${pageContext.request.userPrincipal.name}
+             </div>
+             <a class = "btn btn-" href="/logout"> Logout</a>
+         </c:when>
+         <c:otherwise>
+             <a class="btn btn-success" href="/login">Вход/регистрация</a>
+         </c:otherwise>
 
-  <div id="bar">
+
+     </c:choose>
+
+
+
+     <div id="bar">
 
 
       <div id="container">

@@ -123,28 +123,31 @@ public class MainController   {
 		modelAndView.setViewName("index");
 		return modelAndView;
 	}
-
-
-	//оформить заказ
-    @RequestMapping(value = "/buy")
-	public ModelAndView buyProducts(){
-		ModelAndView modelAndView = new ModelAndView();
-           User user = myService.findUserByUsername(UserHelp.getUserr());
-		Orders order = new Orders(user.getAmount(user.getProductsSet()), user.getName(), user.getProductsDescription(), user.getPhone());
-     	  order.SetcreationTime();
-		      user.clearSet();
-		   myService.addOrder(order);
-		   myService.updateUser(user);
-
-		modelAndView.setViewName("/indexforuser");
-		return modelAndView;
-	}
+//-----------------------------------------------------------------------
 
 	//конец заглушек-------------------------------------------------
 
 
 
 	// ---------------USER PART-------------------------------------------
+
+
+	@RequestMapping(value = "/buy")
+	public ModelAndView buyProducts(){
+		ModelAndView modelAndView = new ModelAndView();
+		User user = myService.findUserByUsername(UserHelp.getUserr());
+		Orders order = new Orders(user.getAmount(user.getProductsSet()), user.getName(), user.getProductsDescription(), user.getPhone());
+		order.SetcreationTime();
+		user.clearSet();
+		myService.addOrder(order);
+		myService.updateUser(user);
+
+		modelAndView.setViewName("/indexforuser");
+		return modelAndView;
+	}
+
+
+
 
 	// TODO: 18.04.2016 поменять под новый вид
 	@RequestMapping(value = "/addtobasket")
@@ -164,28 +167,13 @@ public class MainController   {
 
 		return modelAndView;
 	}
-     //new test
-	@RequestMapping(value = "/addtobasketnew")
-	public ModelAndView addToBacketnew(
-			@RequestParam(value = "test")
-			long id                         )
-	{
-		ModelAndView modelAndView = new ModelAndView();
 
-			User user = myService.findUserByUsername(UserHelp.getUserr());
-			Products product;
-			product = myService.getOneProduct(id);
-		List<Products> productList = new ArrayList<Products>();
-		productList.add(product);
-			user.setProductsSetAddall(productList);
-			myService.updateUser(user);
-			modelAndView.setViewName("basket");
-		return modelAndView;
-	}
 
 	// TODO: 18.04.2016 удаление из корзины
 	@RequestMapping(value = "/remove")
-	public String deleteFromBasket(@RequestParam(value = "Delete[]", required = false) long [] Delete, Model model)
+	public String deleteFromBasket(@RequestParam(value = "Delete[]", required = false)
+
+									   long [] Delete, Model model)
 	{
 
 		List<Products> toDelete = myService.findManyProducts(Delete);
@@ -232,10 +220,9 @@ public class MainController   {
 	}
 
 
-
-
-
 	// ------------------- END OF USER PART--------------------------------------
+
+
 
 	// -------------------ADMIN PART  ---------------------------------------
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
@@ -404,11 +391,11 @@ public class MainController   {
 
 		String error = "";
 		if (exception instanceof BadCredentialsException) {
-			error = "Incorrect username or password";
+			error = "Неверный логин или пароль";
 		} else if (exception instanceof LockedException) {
 			error = exception.getMessage();
 		} else {
-			error = "Incorrect username or password";
+			error = "Неверный логин или пароль";
 		}
 		return error;
 	}

@@ -10,12 +10,15 @@ $(document).ready(function(){
 
 
 
-    $(".hover").click(function () {
+    $(".hover").click(function(){
+        var fnumb = $(this).parent('.cart').parent(".products-main").find("#item").val();
+
         var data2 = {'toAdd[]': []};
-        $(".item").each(function () {
-            data2['toAdd[]'].push($(this).val());
-        });
-        $.post("/addtobasket", data2); });
+        data2['toAdd[]'].push(fnumb);
+
+        $.post('/addtobasket', data2)
+    });
+
 
     $('#send').click(function () {
             alert("dsa");

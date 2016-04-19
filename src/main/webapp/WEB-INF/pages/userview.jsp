@@ -82,7 +82,7 @@
 
                 <c:forEach items="${products}" var = "products">
                     <div class="products-main">
-                        <input type="checkbox" name= " Delete[]" value="${products.id}" id="checkbox_${products.id}"/>
+                       
                         <a class="cart" href="#">
                             <img class="normal" src="/img/shopping-cart.png"/>
                             <img class="hover" src="/img/shopping-cart-hover.png"/>
@@ -105,13 +105,19 @@
 
             </div>
 
-            <a class="btn btn-primary" id = 'send' >Добавить в корзину</a>
-
-
             <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
         </div>
 
-
+        <div class="pagination" id = "navbar">
+            <ul>
+                <li><a href="#">Prev</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+        </div>
 
 
     </div>

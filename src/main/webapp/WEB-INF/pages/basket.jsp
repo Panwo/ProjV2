@@ -74,7 +74,7 @@
                         <div class="products-main">
                             <a href="#" class="close"><i class="fa fa-times"  aria-hidden="true"></i></a>
                             <div class="product">
-                                <label for="item-rem"><h2><a href = "#">${products.description}</a></h2></label><input id="item-rem" name="name" value="" type="text">
+                                <label for="item-rem"><h2><a href = "#">${products.description}</a></h2></label><input id="item-rem" name="name" value="${products.id}" type="text">
                                 <div class="product-img"><a href = "#"><img src="/try/imgage/${products.id}" width="169" height="100" align="middle" /></a> </div>
                                 <p class="price2">${products.price}<span> грн</span>
                             </div>
@@ -95,14 +95,23 @@
 
 
                 <a class="btn btn-primary" id = 'gogo' href="/buy" >Оформить заказ</a>
-                <a class="btn btn-primary" id = 'remove' >Удалить выбранные</a>
+
 
 
                 <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
             </div>
 
 
-
+            <div class="pagination" id = "navbar">
+                <ul>
+                    <li><a href="#">Prev</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </div>
 
         </div>
 
@@ -153,24 +162,7 @@
 
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#remove').click(function () {
-                        alert("dsa");
-                        var data2 = {'Delete[]': []};
-
-                        $(":checked").each(function () {
-                            data2['Delete[]'].push($(this).val());
-                        });
-                        $.post("/remove", data2);
-
-                    }
-            );
-        });
-
-
-
-    </script>
+   </div>
 
     </body>
 

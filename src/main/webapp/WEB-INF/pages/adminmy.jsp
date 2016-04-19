@@ -35,6 +35,7 @@
             </div>
 
             <div id="men">
+
                 <a class = "btn btn-danger" href="/logout"> Logout</a>
 
             </div>
@@ -182,7 +183,16 @@
             <!--<a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>-->
         </div>
 
-
+        <div class="pagination" id = "navbar">
+            <ul>
+                <li><a href="#">Prev</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+        </div>
 
 
     </div>
